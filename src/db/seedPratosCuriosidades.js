@@ -1,0 +1,1235 @@
+/**
+ * Pratos típicos e curiosidades por país.
+ * Formato: [prato_principal, sobremesa, curiosidade_prato, curiosidade_sobremesa]
+ */
+const DADOS_GASTRONOMICOS = {
+  Albânia: [
+    'Tavë kosi (cordeiro com iogurte)',
+    'Baklava de nozes',
+    'O tavë kosi é considerado o prato nacional albanês: cordeiro assado coberto com uma mistura de iogurte e ovos, típico da região de Elbasan.',
+    'A baklava albanesa costuma usar nozes e uma calda menos doce que a versão turca, servida em festas e casamentos.',
+  ],
+  Alemanha: [
+    'Schnitzel com batatas',
+    'Apfelstrudel',
+    'O Schnitzel vienense influenciou a Alemanha, mas cada região tem sua versão — na Baviera acompanha pretzels e mostarda doce.',
+    'O Apfelstrudel chegou via Império Austro-Húngaro e virou clássico alemão, recheado com maçã, canela e passas.',
+  ],
+  Andorra: [
+    'Escudella (ensopado de montanha)',
+    'Crema catalana',
+    'A escudella andorrana reflete a vida nos Pirineus: caldo robusto com carnes, legumes e massa, preparado no inverno.',
+    'A crema catalana, próxima da crème brûlée, marca a influência catalã na cozinha do principado.',
+  ],
+  Áustria: [
+    'Wiener Schnitzel',
+    'Sachertorte',
+    'O Wiener Schnitzel é protegido por lei na Áustria: deve ser de vitela empanada e frita em manteiga clarificada.',
+    'A Sachertorte nasceu no Hotel Sacher, em Viena (1832), e é coberta com geleia de damasco e chocolate amargo.',
+  ],
+  Bélgica: [
+    'Moules-frites (mexilhões com batatas fritas)',
+    'Waffle belga com chocolate',
+    'Os mexilhões com fritas são o prato nacional informal da Bélgica, servidos em panelinhas de metal nos bistrôs de Bruxelas.',
+    'Há duas escolas de waffle: o de Bruxelas (retangular e crocante) e o de Liège (mais denso e caramelizado).',
+  ],
+  Bielorrússia: [
+    'Draniki (panquecas de batata)',
+    'Syrniki com mel',
+    'Os draniki são o coração da cozinha bielorrussa: batata ralada frita, muitas vezes com creme azedo.',
+    'Syrniki são bolinhos de queijo cottage fritos, herança eslava compartilhada com a Rússia e a Ucrânia.',
+  ],
+  'Bósnia e Herzegovina': [
+    'Ćevapi com pão somun',
+    'Tufahija (maçã recheada)',
+    'Os ćevapi bosníacos são salsichinhas grelhadas de carne, servidas com cebola e pão somun — patrimônio cultural do país.',
+    'A tufahija é maçã cozida recheada com nozes e coberta de chantilly, eco do período otomano.',
+  ],
+  Bulgária: [
+    'Shopska salata com queijo sirene',
+    'Banitsa doce',
+    'A salada shopska (tomate, pepino, pimentão e sirene) é símbolo nacional e leve entrada típica.',
+    'A banitsa pode ser salgada ou doce; a versão com ovos e açúcar aparece em festas de Ano Novo.',
+  ],
+  Chipre: [
+    'Souvlaki com halloumi',
+    'Loukoumades',
+    'O chipriota combina grill grego com o queijo halloumi local, grelhado até dourar por fora e macio por dentro.',
+    'Loukoumades são bolinhas fritas de massa banhadas em mel e canela, comuns em feiras e festas religiosas.',
+  ],
+  Croácia: [
+    'Pašticada (carne ao molho)',
+    'Fritule',
+    'A pašticada dalmácia é carne marinada e cozida lentamente com molho agridoce de vinagre, ameixas e especiarias.',
+    'Fritule são bolinhos fritos com rum e passas, típicos do Natal e do Carnaval na costa adriática.',
+  ],
+  Dinamarca: [
+    'Smørrebrød (sanduíches abertos)',
+    'Æbleskiver',
+    'O smørrebrød dinamarquês eleva o sanduíche aberto a arte: centeio, peixe defumado, remoulade e legumes.',
+    'Æbleskiver são “bolinhas de maçã” fritas em panela especial, servidas com geleia e açúcar de confeiteiro.',
+  ],
+  Eslováquia: [
+    'Bryndzové halušky',
+    'Štrúdľa de maçã',
+    'Halušky com queijo de ovelha bryndza é o prato nacional eslovaco, coroado com bacon crocante.',
+    'O strudel de maçã eslovaco mantém a tradição austro-húngara com massa fina e recheio especiado.',
+  ],
+  Eslovênia: [
+    'Kranjska klobasa com chucrute',
+    'Potica',
+    'A linguiça de Kranj tem indicação geográfica protegida e é servida com mostarda e chucrute.',
+    'Potica é um rocambole recheado (nozes, mel ou chocolate), presente em quase toda celebração eslovena.',
+  ],
+  Espanha: [
+    'Paella valenciana',
+    'Churros com chocolate',
+    'A paella nasceu nos campos de Valência: arroz, açafrão, frango, coelho e vagens — peixe é variação costeira.',
+    'Churros com chocolate espesso são clássico de merienda e cafés da manhã de fim de semana em toda a Espanha.',
+  ],
+  Estônia: [
+    'Verivorst com chucrute',
+    'Kama com iogurte',
+    'Verivorst (linguiça de sangue) é prato típico de Natal, acompanhado de lingonberry e batata.',
+    'Kama é mistura de farinhas torradas (centeio, cevada, ervilha) servida com leite azedo ou iogurte.',
+  ],
+  Finlândia: [
+    'Karjalanpaisti (ensopado da Carélia)',
+    'Mustikkapiirakka (torta de mirtilo)',
+    'O ensopado da Carélia combina carnes, cebola e pimenta-da-jamaica, assado longamente no forno.',
+    'A torta de mirtilo finlandesa celebra o verão nórdico, quando as florestas se enchem de berries.',
+  ],
+  França: [
+    'Boeuf bourguignon',
+    'Crème brûlée',
+    'O boeuf bourguignon é carne de boi marinada e braseada no vinho da Borgonha, com bacon, cebolas e cogumelos.',
+    'A crème brûlée ganhou fama nos séculos XVII–XVIII: creme de baunilha com crosta de açúcar caramelizado.',
+  ],
+  Grécia: [
+    'Moussaka',
+    'Baklava',
+    'A moussaka empilha berinjela, carne temperada e bechamel; tornou-se ícone da cozinha grega moderna.',
+    'A baklava grega usa massa filo, nozes e calda de mel — herança do Mediterrâneo oriental.',
+  ],
+  Hungria: [
+    'Gulyás (goulash)',
+    'Dobos torte',
+    'O gulyás nasceu como ensopado de pastores magiares; o páprica doce húngaro define o sabor nacional.',
+    'A torta Dobos (1885) tem camadas de massa e chocolate cobertas por caramelo crocante.',
+  ],
+  Irlanda: [
+    'Irish stew',
+    'Apple pie irlandesa',
+    'O Irish stew tradicional usa cordeiro, batata, cebola e cenoura — comida de conforto das zonas rurais.',
+    'A apple pie irlandesa costuma ser mais rústica, às vezes com whiskey ou creme fresco.',
+  ],
+  Islândia: [
+    'Lamb guisado com tubérculos',
+    'Skyr com berries',
+    'O cordeiro islandês pasta livre e tem sabor intenso; o guisado aquece os invernos longos.',
+    'Skyr é um laticínio cremoso milenar, hoje servido como sobremesa com frutas do Ártico.',
+  ],
+  Itália: [
+    'Ossobuco alla milanese',
+    'Tiramisù',
+    'O ossobuco é jarrete de vitela braseado, clássico de Milão, frequentemente com risotto allo zafferano.',
+    'O tiramisù surgiu no Vêneto nos anos 1960–70: café, mascarpone, cacao e biscoitos savoiardi.',
+  ],
+  Kosovo: [
+    'Flija',
+    'Tespishte',
+    'Flija é massa em camadas assada lentamente, prato cerimonial dos Balcãs ocidentais.',
+    'Tespishte é doce de sêmola em calda, comum em festas familiares kosovares.',
+  ],
+  Letônia: [
+    'Pelēkie zirņi ar speķi (ervilhas com bacon)',
+    'Rupjmaizes kārtojums',
+    'Ervilhas cinzentas com bacon e cebola são o prato nacional letão, tradicional no solstício.',
+    'A sobremesa de pão preto esfarelado com creme e cranberry é clássica das mesas de festa.',
+  ],
+  Liechtenstein: [
+    'Käsknöpfle',
+    'Apfelküchle',
+    'Käsknöpfle são nhoques de queijo alpinos, semelhantes aos spätzle, típicos do principado.',
+    'Apfelküchle são rodelas de maçã empanadas e fritas, cobertas de açúcar e canela.',
+  ],
+  Lituânia: [
+    'Cepelinai',
+    'Šakotis',
+    'Cepelinai (“zepelins”) são dumplings grandes de batata recheados com carne, símbolo da cozinha lituana.',
+    'Šakotis é um bolo em forma de árvore assado em espeto, obrigatório em casamentos.',
+  ],
+  Luxemburgo: [
+    'Judd mat Gaardebounen',
+    'Quetschentaart',
+    'Carne de porco defumada com feijão-fava é o prato nacional luxemburguês.',
+    'A torta de ameixa quetsche celebra o outono nas vinhas do Mosela.',
+  ],
+  'Macedônia do Norte': [
+    'Tavče gravče',
+    'Tulumba',
+    'Feijão assado em travessa de barro (tavče gravče) é o prato nacional macedônio.',
+    'Tulumba são doces fritos em calda de açúcar, herança otomana dos Balcãs.',
+  ],
+  Malta: [
+    'Fenek (coelho guisado)',
+    'Kannoli malteses',
+    'O coelho guisado no vinho é o prato nacional maltês, eco da caça nas ilhas.',
+    'Kannoli recheados com ricota adoçada mostram a influência siciliana em Malta.',
+  ],
+  Moldávia: [
+    'Mămăligă com brânză',
+    'Plăcintă doce',
+    'A mămăligă (polenta) com queijo e smântână é base da mesa moldávia rural.',
+    'Plăcintă pode ser salgada ou doce; a de maçã ou queijo doce é clássica de merenda.',
+  ],
+  Mônaco: [
+    'Barbagiuan',
+    'Fougasse doce',
+    'Barbagiuan são pastéis fritos recheados com acelga e ricota, típicos do Rock de Mônaco.',
+    'A fougasse monegasca doce leva anis e laranja, servida em festas patronais.',
+  ],
+  Montenegro: [
+    'Kačamak com queijo',
+    'Priyanski kolač',
+    'Kačamak é polenta cremosa com queijo e kaymak, comida de montanha montenegrina.',
+    'Bolos de nozes e mel refletem a tradição de doces dos mosteiros ortodoxos.',
+  ],
+  Noruega: [
+    'Fårikål',
+    'Krumkake',
+    'Fårikål (cordeiro com repolho) é o prato nacional norueguês, simples e aquecedor.',
+    'Krumkake são biscoitos finos enrolados em cone, feitos em ferro especial no Natal.',
+  ],
+  'Países Baixos': [
+    'Stamppot com rookworst',
+    'Poffertjes',
+    'Stamppot mistura purê de batata com vegetais e linguiça defumada — clássico de inverno holandês.',
+    'Poffertjes são mini panquecas fofas servidas com manteiga e açúcar de confeiteiro.',
+  ],
+  Polônia: [
+    'Bigos',
+    'Sernik',
+    'Bigos (“caçador”) é chucrute refogado com várias carnes, prato símbolo da Polônia.',
+    'Sernik é o cheesecake polonês à base de twaróg, menos doce e mais denso que o americano.',
+  ],
+  Portugal: [
+    'Bacalhau à Brás',
+    'Pastel de nata',
+    'O bacalhau à Brás mistura lascas de bacalhau, batata palha e ovos — um dos milhares de modos portugueses.',
+    'O pastel de nata nasceu nos Jerónimos (Belém) e espalhou-se pelo mundo via rotas portuguesas.',
+  ],
+  'Reino Unido': [
+    'Fish and chips',
+    'Sticky toffee pudding',
+    'Fish and chips virou comida de rua britânica no século XIX, tradicionalmente embrulhado em jornal.',
+    'Sticky toffee pudding é bolo úmido de tâmaras com calda de caramelo, clássico dos pubs ingleses.',
+  ],
+  'República Tcheca': [
+    'Svíčková',
+    'Trdelník',
+    'Svíčková é carne de vaca com molho cremoso de legumes e cranberry — prato de festa tcheco.',
+    'Trdelník é massa enrolada em cilindro, assada e polvilhada com açúcar e nozes, popular em Praga.',
+  ],
+  Romênia: [
+    'Sarmale',
+    'Papanasi',
+    'Sarmale são charutos de repolho recheados com carne e arroz, obrigatórios no Natal romeno.',
+    'Papanasi são donuts de queijo com creme azedo e geleia — sobremesa queridinha dos cafés.',
+  ],
+  Rússia: [
+    'Beef Stroganoff',
+    'Blini com geleia',
+    'O Stroganoff surgiu na Rússia do século XIX: tiras de carne ao molho de creme e mostarda.',
+    'Blinis são panquecas finas servidas com caviar, smetana ou geleia, ícones da Maslenitsa.',
+  ],
+  'San Marino': [
+    'Ninho de passero (pasta local)',
+    'Torta tre monti',
+    'Massas recheadas e molhos de carne marcam a cozinha samarina, próxima da Emília-Romanha.',
+    'A torta Tre Monti homenageia os três castelos do Monte Titano com camadas crocantes e avelã.',
+  ],
+  Sérvia: [
+    'Karadjordjeva šnicla',
+    'Krempita',
+    'A milanesa Karadjordje é enrolada com kajmak e empanada — criação do século XX em homenagem a um herói nacional.',
+    'Krempita é creme de baunilha entre massas folhadas, clássico das confeitarias balcânicas.',
+  ],
+  Suécia: [
+    'Köttbullar (almôndegas)',
+    'Kanelbulle',
+    'As almôndegas suecas com molho, lingonberry e purê são o prato mais internacional da Suécia.',
+    'O kanelbulle (pão de canela) tem até um dia nacional: 4 de outubro.',
+  ],
+  Suíça: [
+    'Fondue de queijo',
+    'Chocolate suíço com frutas',
+    'A fondue uniu cantões produtores de queijo: Gruyère e Vacherin derretidos com vinho branco.',
+    'A Suíça revolucionou o chocolate no século XIX com o processo de conching e o leite em pó.',
+  ],
+  Ucrânia: [
+    'Borscht',
+    'Syrniki ucranianos',
+    'O borscht de beterraba é patrimônio cultural ucraniano reconhecido pela UNESCO.',
+    'Syrniki fritos com smetana e mel são café da manhã e sobremesa nas casas ucranianas.',
+  ],
+  Vaticano: [
+    'Pasta alla papalina',
+    'Gelato artesanal',
+    'A pasta alla papalina (presunto, ervilha, ovo e queijo) teria sido criada para o Papa Pio XII.',
+    'O gelato romano, a poucos passos do Vaticano, é a sobremesa cotidiana da Cidade Eterna.',
+  ],
+  Argentina: [
+    'Asado com chimichurri',
+    'Dulce de leche com alfajor',
+    'O asado é ritual social argentino: carnes grelhadas lentamente e divididas entre família e amigos.',
+    'O alfajor recheado de dulce de leche é o doce mais icônico das padarias argentinas.',
+  ],
+  Bolívia: [
+    'Salteña',
+    'Api com pastel',
+    'A salteña é empanada suculenta de carne e caldo, lanche nacional boliviano.',
+    'Api (bebida de milho morado) com pastel frito é café da manhã clássico nas feiras.',
+  ],
+  Brasil: [
+    'Feijoada',
+    'Brigadeiro',
+    'A feijoada nasceu da fusão de ingredientes africanos, portugueses e indígenas e virou prato nacional.',
+    'O brigadeiro surgiu nos anos 1940 em campanhas políticas e conquistou festas infantis brasileiras.',
+  ],
+  Chile: [
+    'Pastel de choclo',
+    'Mote con huesillo',
+    'Pastel de choclo cobre um refogado de carne com creme de milho fresco, assado até dourar.',
+    'Mote con huesillo (trigo com pêssego seco) é a bebida-sobremesa do verão chileno.',
+  ],
+  Colômbia: [
+    'Bandeja paisa',
+    'Arequipe com obleas',
+    'A bandeja paisa reúne feijão, arroz, carne, chicharrón, ovo e avocado — banquete antioquenho.',
+    'Obleas com arequipe (doce de leite) são o lanche doce mais popular da Colômbia.',
+  ],
+  'Costa Rica': [
+    'Casado',
+    'Tres leches',
+    'O casado é o almoço típico: arroz, feijão, proteína, salada e plátano — “casamento” de sabores.',
+    'O tres leches centro-americano ficou célebre na Costa Rica em festas e padarias.',
+  ],
+  Cuba: [
+    'Ropa vieja',
+    'Flan de caramelo',
+    'Ropa vieja (“roupa velha”) é carne desfiada ao molho de tomate, pimentão e cebola.',
+    'O flan cubano, denso e caramelizado, fecha quase toda refeição em família.',
+  ],
+  'El Salvador': [
+    'Pupusas',
+    'Quesadilla salvadoreña',
+    'Pupusas (tortillas recheadas de queijo, frijoles ou chicharrón) são patrimônio cultural de El Salvador.',
+    'A quesadilla salvadoreña é um bolo de queijo, não o wrap mexicano — doce e úmido.',
+  ],
+  Equador: [
+    'Encebollado',
+    'Pristiños com melado',
+    'Encebollado de peixe com cebola e yuca é considerado o “remédio” nacional da ressaca.',
+    'Pristiños são massas fritas crocantes regadas com melado de panela, típicos do Natal.',
+  ],
+  Guatemala: [
+    'Pepián',
+    'Rellenitos de plátano',
+    'Pepián é ensopado espesso de carne com sementes torradas e chiles — prato nacional.',
+    'Rellenitos são plátanos maduros recheados com frijoles doces e fritos.',
+  ],
+  Haiti: [
+    'Griot com diri kole',
+    'Pain patate',
+    'Griot (porco marinados e frito) com arroz e feijão é o prato festivo haitiano.',
+    'Pain patate é um pudim de batata-doce com especiarias e coco, herança afro-caribenha.',
+  ],
+  Honduras: [
+    'Baleada',
+    'Rosquillas',
+    'A baleada é tortilla de trigo com frijoles, queijo e crema — street food hondurenho.',
+    'Rosquillas de milho e queijo são biscoitos típicos das regiões do interior.',
+  ],
+  México: [
+    'Mole poblano',
+    'Churros mexicanos',
+    'O mole poblano mistura dezenas de ingredientes (chiles, chocolate, especiarias) e é prato de celebração.',
+    'Churros polvilhados com canela, às vezes recheados, são clássicos de feiras e cafés mexicanos.',
+  ],
+  Nicarágua: [
+    'Gallo pinto',
+    'Tres leches nicaraguense',
+    'Gallo pinto (arroz com feijão) é café da manhã e identidade nacional da Nicarágua.',
+    'O tres leches local costuma ser bem úmido e servido em festas familiares.',
+  ],
+  Panamá: [
+    'Sancocho panamenho',
+    'Suspiros',
+    'O sancocho de galinha com ñame é o conforto nacional, especialmente após noites longas.',
+    'Suspiros são merengues leves vendidos em padarias e festas infantis.',
+  ],
+  Paraguai: [
+    'Sopa paraguaya',
+    'Kaguyjy (mazamorra)',
+    'Apesar do nome, sopa paraguaya é um bolo salgado de milho e queijo — prato nacional.',
+    'Kaguyjy é mingau doce de milho, herança guarani ainda presente no cotidiano.',
+  ],
+  Peru: [
+    'Ceviche',
+    'Suspiro de limeña',
+    'O ceviche peruano (peixe “cozido” no limão) é patrimônio cultural e embaixador da gastronomia peruana.',
+    'O suspiro de limeña combina manjar branco e merengue — criação das casas de Lima do século XIX.',
+  ],
+  'República Dominicana': [
+    'La bandera dominicana',
+    'Habichuelas con dulce',
+    'Arroz, feijão e carne formam “a bandeira”, o almoço cotidiano dominicano.',
+    'Habichuelas con dulce (feijão doce) é a sobremesa típica da Quaresma.',
+  ],
+  Uruguai: [
+    'Chivito',
+    'Dulce de leche com chajá',
+    'O chivito é sanduíche generoso de carne, ovos, bacon e maionese — orgulho uruguaio.',
+    'O postre Chajá mistura merengue, pêssego e dulce de leche, criado em Paysandú.',
+  ],
+  Venezuela: [
+    'Pabellón criollo',
+    'Quesillo',
+    'Pabellón (carne desfiada, arroz, feijão preto e plátano) é o prato nacional venezuelano.',
+    'Quesillo é o flan venezuelano com furinhos característicos na calda de caramelo.',
+  ],
+  Belize: [
+    'Rice and beans com stewed chicken',
+    'Cassava pone',
+    'Arroz e feijão de coco com frango ensopado é o prato cotidiano belizenho.',
+    'Cassava pone é um bolo denso de mandioca, coco e especiarias, herança caribenha.',
+  ],
+  Guiana: [
+    'Pepperpot',
+    'Pine tart',
+    'Pepperpot é ensopado escuro de carne com cassareep (calda de mandioca), prato de Natal.',
+    'Pine tart são pastéis de abacaxi, clássicos das padarias guianenses.',
+  ],
+  Suriname: [
+    'Pom',
+    'Bojo cake',
+    'Pom (frango com aroei) é o prato festivo da comunidade crioula surinamesa.',
+    'Bojo cake é bolo de mandioca e coco, doce típico de celebrações.',
+  ],
+  Jamaica: [
+    'Jerk chicken',
+    'Rum cake',
+    'O jerk jamaicano usa pimenta scotch bonnet e pimenta-da-jamaica em defumação lenta.',
+    'Rum cake encharcado de rum é o bolo de Natal mais famoso da Jamaica.',
+  ],
+  'Trinidad e Tobago': [
+    'Doubles',
+    'Sweet bread',
+    'Doubles (barra de curry de grão-de-bico em bara) é o street food número um de Trinidad.',
+    'Sweet bread de coco e frutas cristalizadas aparece em festas hindus e natalinas.',
+  ],
+  Barbados: [
+    'Cou-cou com flying fish',
+    'Pudding and souse',
+    'Cou-cou (fubá com quiabo) e peixe-voador é o prato nacional de Barbados.',
+    'Pudding and souse (batata-doce com carne temperada) é clássico de sábado.',
+  ],
+  Bahamas: [
+    'Conch fritters',
+    'Guava duff',
+    'Bolinhos de concha-rainha fritas são o petisco mais famoso das Bahamas.',
+    'Guava duff é rocambole de goiaba cozido no vapor, sobremesa tradicional.',
+  ],
+  Grenada: [
+    'Oil down',
+    'Nutmeg ice cream',
+    'Oil down (pão-de-árvore, peixe e coco cozidos juntos) é o prato nacional granadino.',
+    'O sorvete de noz-moscada celebra a “ilha das especiarias”.',
+  ],
+  'Santa Lúcia': [
+    'Green fig and saltfish',
+    'Banana bread caribenho',
+    'Banana-da-terra verde com bacalhau é o prato nacional de Santa Lúcia.',
+    'Banana bread úmido com especiarias é lanche típico das ilhas.',
+  ],
+  'São Vicente e Granadinas': [
+    'Roasted breadfruit com peixe frito',
+    'Arrowroot pudding',
+    'Pão-de-árvore assado e peixe frito formam a refeição nacional vincentiana.',
+    'Pudim de araruta usa o amido local famoso das Granadinas.',
+  ],
+  'Antígua e Barbuda': [
+    'Fungee and pepperpot',
+    'Antiguan black cake',
+    'Fungee (mingau de milho) com pepperpot é o prato nacional de Antígua.',
+    'Black cake encharcado de rum e frutas é o bolo de casamento e Natal.',
+  ],
+  Dominica: [
+    'Callaloo com crab',
+    'Fresh coconut fudge',
+    'Callaloo de folhas locais com caranguejo é o conforto culinário dominiquense.',
+    'Doces de coco fresco aparecem em feiras e festivais da ilha.',
+  ],
+  'São Cristóvão e Névis': [
+    'Stewed saltfish com spicy plantains',
+    'Coconut sugar cake',
+    'Bacalhau ensopado com plátanos apimentados é o prato nacional de St. Kitts.',
+    'Sugar cakes de coco e gengibre são doces de rua clássicos.',
+  ],
+  Canadá: [
+    'Poutine',
+    'Butter tarts',
+    'Poutine (batatas, queijo coalho e gravy) nasceu em Quebec e virou ícone canadense.',
+    'Butter tarts são tartletes de manteiga e açúcar, doce pioneiro do Ontário.',
+  ],
+  'Estados Unidos': [
+    'Burger artesanal com fries',
+    'Apple pie americana',
+    'O hamburger virou símbolo dos EUA no século XX, com infinitas variações regionais.',
+    'Apple pie é o clichê doce americano — “as American as apple pie”.',
+  ],
+  'África do Sul': [
+    'Bobotie',
+    'Malva pudding',
+    'Bobotie (carne temperada com cobertura de ovo) tem raízes cape-malay e é prato nacional.',
+    'Malva pudding é bolo úmido de damasco com creme quente, clássico africâner.',
+  ],
+  Angola: [
+    'Moamba de galinha',
+    'Cocada angolana',
+    'A moamba de galinha ao molho de dendê e okra é o prato mais emblemático de Angola.',
+    'Cocadas e doces de coco refletem a abundância tropical e a herança portuguesa.',
+  ],
+  Argélia: [
+    'Cuscuz argelino',
+    'Makroud',
+    'O cuscuz com carne e legumes é o centro das mesas familiares e do sexta-feira argelina.',
+    'Makroud são doces de sêmola recheados com tâmara, fritos ou assados e banhados em mel.',
+  ],
+  Benin: [
+    'Pâte com sauce d’arachide',
+    'Amiwo doce',
+    'A pasta de milho ou inhame com molho de amendoim é a base da dieta beninense.',
+    'Variantes doces de mingaus de milho aparecem em festas tradicionais.',
+  ],
+  Botsuana: [
+    'Seswaa',
+    'Bogobe doce',
+    'Seswaa (carne desfiada cozida lentamente) é o prato nacional de Botsuana, servido em cerimônias.',
+    'Bogobe (mingau de sorgo) pode ser adoçado com leite e mel.',
+  ],
+  'Burquina Faso': [
+    'Tô com molho de quiabo',
+    'Beignets de milho',
+    'Tô (pasta de milho ou painço) com molhos de folhas e quiabo é o prato cotidiano burquinense.',
+    'Beignets fritos de milho são o lanche doce das ruas de Ouagadougou.',
+  ],
+  Burundi: [
+    'Brochettes com ubugari',
+    'Matoke doce',
+    'Espetinhos grelhados com ubugari (pasta de mandioca/milho) marcam a cozinha burundinesa.',
+    'Banana-da-terra cozida e adoçada é sobremesa simples e popular.',
+  ],
+  'Cabo Verde': [
+    'Cachupa',
+    'Doce de papaya',
+    'A cachupa (milho com feijão e peixe ou carne) é o prato nacional cabo-verdiano.',
+    'Doces de papaia e coco mostram a face atlântica e tropical da confeitaria local.',
+  ],
+  Camarões: [
+    'Ndolé',
+    'Beignets camerounais',
+    'Ndolé (folhas amargas com amendoim e peixe ou carne) é o prato nacional camaronesês.',
+    'Beignets fritos polvilhados com açúcar são o lanche urbano por excelência.',
+  ],
+  Chade: [
+    'Boule com molho de okra',
+    'Datiles com queijo fresco',
+    'A bola de painço ou sorgo com molhos de okra alimenta o Sahel chadiano.',
+    'Tâmaras com laticínios frescos são a sobremesa natural do deserto.',
+  ],
+  Comores: [
+    'Langouste à la vanille',
+    'Mkatra Foutra',
+    'Lagosta com baunilha de Comores celebra os dois produtos mais famosos do arquipélago.',
+    'Pães doces de coco e especiarias acompanham chás e festas muçulmanas.',
+  ],
+  Congo: [
+    'Poulet moambé',
+    'Beignets de banane',
+    'Frango ao molho de amêndoa de palma (moambé) é clássico nas duas margens do Congo.',
+    'Bananas fritas açucaradas são a sobremesa de rua mais comum.',
+  ],
+  'Costa do Marfim': [
+    'Attiéké com peixe grelhado',
+    'Alloco (banana frita)',
+    'Attiéké (couscous de mandioca) com peixe é o prato mais associado à Costa do Marfim.',
+    'Alloco são bananas-da-terra fritas, petisco e acompanhamento doce-salgado.',
+  ],
+  Djibuti: [
+    'Skudahkharis',
+    'Halwa djibutiense',
+    'Arroz com carne e especiarias (skudahkharis) reflete a influência somali e árabe.',
+    'Halwa de açúcar e especiarias é o doce ceremonial do Chifre da África.',
+  ],
+  Egito: [
+    'Koshari',
+    'Umm Ali',
+    'Koshari (arroz, lentilha, macarrão e molho de tomate) é o street food nacional egípcio.',
+    'Umm Ali é um pudim de pão com leite, nozes e passas — a “rainha” das sobremesas egípcias.',
+  ],
+  Eritreia: [
+    'Zigni com injera',
+    'Himbasha doce',
+    'Zigni (ensopado picante) sobre injera (pão fermentado) define a mesa eritreia.',
+    'Himbasha é pão levemente adocicado com cardamomo, servido em festas.',
+  ],
+  Essuatíni: [
+    'Sishwala com carne',
+    'Emasi com mel',
+    'Pap (sishwala) com carne grelhada é a base da alimentação suazi.',
+    'Leite azedo (emasi) com mel é sobremesa e lanche tradicional.',
+  ],
+  Etiópia: [
+    'Doro wat com injera',
+    'Honey wine cake',
+    'Doro wat (frango picante com ovo) sobre injera é o prato festivo etíope por excelência.',
+    'Bolos e pães com mel e especiarias acompanham o tej (hidromel) em celebrações.',
+  ],
+  Gabão: [
+    'Nyembwe chicken',
+    'Banana frita com mel',
+    'Frango ao molho de noz de palma (nyembwe) é o prato nacional gabonês.',
+    'Bananas fritas com mel fecham refeições tropicais no Gabão.',
+  ],
+  Gâmbia: [
+    'Domoda',
+    'Pudding de milho',
+    'Domoda (ensopado de amendoim) é o prato nacional gambiano, servido com arroz.',
+    'Mingaus doces de milho são comuns após o jantar.',
+  ],
+  Gana: [
+    'Jollof rice ganês',
+    'Bofrot',
+    'O jollof ganês rivaliza com o nigeriano: arroz tomateado com especiarias e proteína.',
+    'Bofrot (donuts africanos) são fritos e polvilhados com açúcar nas ruas de Acra.',
+  ],
+  Guiné: [
+    'Sauce arachide com riz',
+    'Beignets de milho',
+    'Molho de amendoim com arroz é o cotidiano da Guiné Conacri.',
+    'Beignets crocantes de milho são o doce popular dos mercados.',
+  ],
+  'Guiné-Bissau': [
+    'Caldo de mancarra',
+    'Cocada bissau-guineense',
+    'O caldo de mancarra (amendoim) com peixe ou carne é o sabor nacional.',
+    'Cocadas lembram a ligação atlântica com a lusofonia africana.',
+  ],
+  'Guiné Equatorial': [
+    'Succotash de banana-pão',
+    'Doce de coco local',
+    'Pratos com banana-pão, peixe e molhos de amendoim marcam a cozinha equato-guineense.',
+    'Doces de coco e melado são típicos das ilhas e do continente.',
+  ],
+  Lesoto: [
+    'Papa com moroho',
+    'Likhobe doce',
+    'Papa (polenta de milho) com vegetais silvestres é a base da dieta basotho.',
+    'Grãos cozidos adoçados aparecem em rituais e festas.',
+  ],
+  Libéria: [
+    'Jollof liberiano',
+    'Kanyah',
+    'O jollof liberiano e o “check rice” são pilares da comida de rua de Monróvia.',
+    'Kanyah (amendoim com gengibre e arroz) é o doce energético nacional.',
+  ],
+  Líbia: [
+    'Imbakbaka',
+    'Basbousa',
+    'Imbakbaka é uma pasta/ensopado de macarrão com especiarias, prato doméstico líbio.',
+    'Basbousa (bolo de sêmola com calda) é a sobremesa magrebina compartilhada na Líbia.',
+  ],
+  Madagascar: [
+    'Romazava',
+    'Koba',
+    'Romazava (ensopado de carne com folhas) é o prato nacional malgaxe.',
+    'Koba é um doce de amendoim e banana envolto em folhas de bananeira.',
+  ],
+  Malawi: [
+    'Nsima com chambo',
+    'Mandazi',
+    'Nsima (polenta de milho) com peixe chambo do Lago Malawi é a combinação nacional.',
+    'Mandazi (donuts levemente adocicados) são lanche de chá em todo o país.',
+  ],
+  Mali: [
+    'Tiguadege na',
+    'Dégué',
+    'Tiguadege na (ensopado de amendoim) é um dos pratos mais amados do Mali.',
+    'Dégué (cuscuz doce com iogurte) é sobremesa e café da manhã.',
+  ],
+  Marrocos: [
+    'Tagine de cordeiro',
+    'Pastilla doce / chebakia',
+    'O tagine cozinha lentamente carnes e frutas secas sob a tampa cônica icônica.',
+    'Chebakia (flor frita com mel e gergelim) brilha no Ramadã marroquino.',
+  ],
+  Maurícia: [
+    'Dholl puri',
+    'Napolitaine',
+    'Dholl puri (pão de lentilha com curry) é o street food símbolo de Maurícia.',
+    'Napolitaine são biscoitos com geleia e fondant, herança franco-mauriciana.',
+  ],
+  Mauritânia: [
+    'Méchoi',
+    'Datiles com leite',
+    'Méchoi (cordeiro assado) é o banquete nômade mauritano.',
+    'Tâmaras com leite fresco são a sobremesa do deserto atlântico.',
+  ],
+  Moçambique: [
+    'Matapa',
+    'Bolo polana',
+    'Matapa (folhas de mandioca com amendoim e camarão) é ícone da cozinha moçambicana.',
+    'Bolo polana (castanha de caju) nasceu em Maputo e virou clássico colonial-tropical.',
+  ],
+  Namíbia: [
+    'Kapana com pap',
+    'Milchschnitte local',
+    'Kapana (carne grelhada de rua) em Windhoek é instituição nacional.',
+    'Doces de influência alemã e africâner ainda marcam padarias namíbias.',
+  ],
+  Níger: [
+    'Dambou',
+    'Fari masa',
+    'Dambou (cuscuz de milho com moringa) é prato festivo do Níger.',
+    'Fari masa são bolinhos fritos doces vendidos nas ruas de Niamey.',
+  ],
+  Nigéria: [
+    'Jollof rice nigeriano',
+    'Puff-puff',
+    'O jollof nigeriano é motivo de orgulho (e rivalidade) gastronômica na África Ocidental.',
+    'Puff-puff são bolinhas doces fritas, onipresentes em festas nigerianas.',
+  ],
+  Quênia: [
+    'Ugali com nyama choma',
+    'Mandazi quenianos',
+    'Ugali com carne grelhada (nyama choma) é a combinação social do Quênia.',
+    'Mandazi levemente especiados acompanham o chai da tarde.',
+  ],
+  'República Centro-Africana': [
+    'Gozo com molho de amendoim',
+    'Beignets de mandioca',
+    'Gozo (pasta de mandioca/milho) com molhos de amendoim alimenta o cotidiano centro-africano.',
+    'Beignets de mandioca são o doce popular dos mercados.',
+  ],
+  'República Democrática do Congo': [
+    'Poulet à la moambe',
+    'Chikwangue doce',
+    'Frango moambe é o prato nacional congolês, com molho rico de palma.',
+    'Massas de mandioca adoçadas aparecem como lanche nas cidades e vilas.',
+  ],
+  Ruanda: [
+    'Brochettes com ugali',
+    'Sweet potatoes com mel',
+    'Espetinhos de carne com ugali são o sabor das noites de Kigali.',
+    'Batata-doce com mel é sobremesa simples das zonas rurais.',
+  ],
+  'São Tomé e Príncipe': [
+    'Calulu santomense',
+    'Chocolate de cacau local',
+    'Calulu de peixe ou carne com folhas e azeite de palma é o prato-ilha.',
+    'O cacau de São Tomé rende chocolates artesanais celebrados internacionalmente.',
+  ],
+  Senegal: [
+    'Thieboudienne',
+    'Thiéré doce',
+    'Thieboudienne (arroz com peixe) é o prato nacional senegalês e patrimônio imaterial.',
+    'Cuscuz de milheto adoçado (thiéré) aparece em cerimônias religiosas.',
+  ],
+  Seicheles: [
+    'Grilled fish com rice and lentils',
+    'Ladob',
+    'Peixe grelhado com arroz e lentilhas resume a mesa crioula seichelense.',
+    'Ladob (banana ou pão-de-árvore no leite de coco) é a sobremesa nacional.',
+  ],
+  'Serra Leoa': [
+    'Groundnut stew',
+    'Sweet potato pone',
+    'O ensopado de amendoim com arroz é o conforto nacional de Serra Leoa.',
+    'Pone de batata-doce é bolo úmido de influência afro-caribenha e local.',
+  ],
+  Somália: [
+    'Bariis iskukaris',
+    'Xalwo',
+    'Arroz especiado com carne (bariis) é o centro das refeições somalis.',
+    'Xalwo (halva) de açúcar, cardamomo e nozes é o doce ceremonial.',
+  ],
+  Sudão: [
+    'Ful medames sudanês',
+    'Basbousa sudanesa',
+    'Ful (fava) com pão é café da manhã e identidade sudanesa.',
+    'Basbousa de sêmola com calda fecha banquetes e iftares.',
+  ],
+  'Sudão do Sul': [
+    'Kisra com ensopado',
+    'Asida doce',
+    'Kisra (pão de sorgo) com ensopados de carne ou folhas é a base alimentar.',
+    'Asida (mingau) adoçada com mel ou tâmaras é sobremesa e café da manhã.',
+  ],
+  Tanzânia: [
+    'Ugali com mchuzi',
+    'Vitumbua',
+    'Ugali com molhos de peixe ou carne define a mesa tanzaniana continental e insular.',
+    'Vitumbua são panquecas de arroz de coco, típicas de Zanzibar e da costa.',
+  ],
+  Togo: [
+    'Fufu com sauce arachide',
+    'Akume doce',
+    'Fufu com molho de amendoim é o prato cotidiano togolês.',
+    'Mingaus doces de milho (akume) aparecem em festas locais.',
+  ],
+  Tunísia: [
+    'Couscous tunisino',
+    'Baklava / makroud tunisino',
+    'O cuscuz tunisino costuma ser mais picante, com harissa e caldo vermelho.',
+    'Makroud de tâmara e sêmola é o doce mais típico das padarias tunisinas.',
+  ],
+  Uganda: [
+    'Matoke com groundnut sauce',
+    'Mandazi ugandenses',
+    'Matoke (banana-da-terra no vapor) com molho de amendoim é o prato nacional.',
+    'Mandazi acompanham o chá da tarde em Kampala e no interior.',
+  ],
+  Zâmbia: [
+    'Nshima com ifisashi',
+    'Fritters doces',
+    'Nshima com ifisashi (folhas em molho de amendoim) é a combinação nacional zambiana.',
+    'Fritters açucarados são o lanche de mercados e paragens de ônibus.',
+  ],
+  Zimbábue: [
+    'Sadza com stew',
+    'Maheu adoçado',
+    'Sadza (polenta de milho) com ensopado é o coração da cozinha zimbabuana.',
+    'Maheu (bebida de milho fermentado) pode ser servido doce como sobremesa líquida.',
+  ],
+  Afeganistão: [
+    'Kabuli pulao',
+    'Firni',
+    'Kabuli pulao (arroz com cordeiro, passas e cenoura) é o prato nacional afegão.',
+    'Firni (pudim de leite com cardamomo e pistache) é a sobremesa clássica de festas.',
+  ],
+  Armênia: [
+    'Harissa armênia',
+    'Gata',
+    'Harissa (trigo com carne desfiada) é prato ancestral e simbólico da Armênia.',
+    'Gata é pão doce recheado com farinha manteigada (khoriz), presente em festas.',
+  ],
+  Azerbaijão: [
+    'Plov azerbaijano',
+    'Pakhlava',
+    'O plov (pilaf) tem dezenas de versões e é o centro dos banquetes azeris.',
+    'Pakhlava azerbaijana, em camadas e diamantes, é orgulho nacional de Novruz.',
+  ],
+  Bangladesh: [
+    'Hilsa curry com arroz',
+    'Rasgulla / mishti doi',
+    'O peixe hilsa ao curry é o tesouro gastronômico de Bangladesh.',
+    'Mishti doi (iogurte doce) e rasgulla são pilares da confeitaria bengali.',
+  ],
+  Bhutan: [
+    'Ema datshi',
+    'Suja com arroz doce',
+    'Ema datshi (pimentas com queijo) é o prato nacional do Butão — intensamente picante.',
+    'Arroz doce e chá de manteiga (suja) acompanham rituais e o cotidiano himalaio.',
+  ],
+  Brunei: [
+    'Ambuyat',
+    'Kuih',
+    'Ambuyat (pasta de sagu) com molhos é o prato nacional do Brunei.',
+    'Kuih (docinhos malaios coloridos) enchem as mesas de festas e bazares.',
+  ],
+  Camboja: [
+    'Amok trey',
+    'Num ansom',
+    'Amok (peixe no leite de coco cozido em folhas) é o prato nacional cambojano.',
+    'Num ansom (bolo de arroz glutinoso) marca o Ano Novo Khmer.',
+  ],
+  Cazaquistão: [
+    'Beshbarmak',
+    'Baursak com mel',
+    'Beshbarmak (“cinco dedos”) é carne com massa, o prato nacional cazaque.',
+    'Baursak (bolinhos fritos) com mel ou chá doce fecham as refeições nômades.',
+  ],
+  China: [
+    'Pato laqueado de Pequim',
+    'Tangyuan / doce de feijão vermelho',
+    'O pato de Pequim, com pele crocante e panquecas, é o banquete imperial chinês.',
+    'Doces de feijão vermelho e tangyuan (bolinhas glutinosas) marcam festivais lunares.',
+  ],
+  'Coreia do Norte': [
+    'Naengmyeon',
+    'Injeolmi',
+    'Naengmyeon (macarrão frio de trigo sarraceno) é especialidade de Pyongyang.',
+    'Injeolmi (bolo de arroz com feijão de soja torrado) é doce tradicional coreano.',
+  ],
+  'Coreia do Sul': [
+    'Bibimbap',
+    'Hotteok',
+    'Bibimbap (arroz com vegetais, carne e gochujang) é o prato-símbolo da Coreia do Sul.',
+    'Hotteok são panquecas recheadas com açúcar mascavo e nozes, clássico de inverno.',
+  ],
+  Filipinas: [
+    'Adobo filipino',
+    'Halo-halo',
+    'Adobo (carne marinada em vinagre e soja) é o prato nacional informal das Filipinas.',
+    'Halo-halo mistura gelo raspado, leite, frutas e doces — sobremesa do verão tropical.',
+  ],
+  Geórgia: [
+    'Khinkali',
+    'Churchkhela',
+    'Khinkali (dumplings de caldo) são o orgulho da mesa georgiana, comidos com as mãos.',
+    'Churchkhela (nozes no mosto de uva) é o “snickers” georgiano milenar.',
+  ],
+  Índia: [
+    'Butter chicken',
+    'Gulab jamun',
+    'Butter chicken nasceu em Déli: frango tandoori no molho cremoso de tomate e manteiga.',
+    'Gulab jamun são bolinhas de leite fritas em calda de rosa — doce de celebração.',
+  ],
+  Indonésia: [
+    'Nasi goreng',
+    'Dadar gulung',
+    'Nasi goreng (arroz frito) é o prato nacional indonésio, com kecap manis e ovo.',
+    'Dadar gulung é panqueca verde de pandan recheada com coco e açúcar de palma.',
+  ],
+  Japão: [
+    'Ramen / curry japonês',
+    'Mochi com anko',
+    'O ramen e o curry japonês (karē) são pratos do dia a dia que conquistaram o mundo.',
+    'Mochi recheado com anko (pasta de feijão) marca estações e templos xintoístas.',
+  ],
+  Quirguistão: [
+    'Beshbarmak quirguiz',
+    'Boorsok com mel',
+    'Beshbarmak com carne de cavalo ou ovino é o banquete tradicional quirguiz.',
+    'Boorsok fritos com mel ou geleia acompanham o chá nas yourtes.',
+  ],
+  Laos: [
+    'Laab com sticky rice',
+    'Khao nom kok',
+    'Laab (salada de carne picante) com arroz glutinoso é o sabor nacional laosiano.',
+    'Khao nom kok são bolinhos de coco assados em formas especiais.',
+  ],
+  Malásia: [
+    'Nasi lemak',
+    'Cendol',
+    'Nasi lemak (arroz no leite de coco com sambal) é o café da manhã nacional malaio.',
+    'Cendol (gelo, leite de coco, jaggery e macarrão de pandan) refresca o equador.',
+  ],
+  Maldivas: [
+    'Mas huni',
+    'Bondi / doce de coco',
+    'Mas huni (atum ralado com coco e pimenta) é o café da manhã maldivo.',
+    'Doces de coco e palm sugar são a confeitaria das atóis.',
+  ],
+  Mongólia: [
+    'Buuz',
+    'Aaruul',
+    'Buuz (dumplings a vapor) são o prato do Ano Novo lunar mongol (Tsagaan Sar).',
+    'Aaruul (queijo seco) é o “doce” nômade, azedo e energético.',
+  ],
+  Myanmar: [
+    'Mohinga',
+    'Mont let saung',
+    'Mohinga (sopa de peixe com macarrão de arroz) é o café da manhã nacional birmanês.',
+    'Mont let saung (sagu com coco) é sobremesa refrescante de rua.',
+  ],
+  Nepal: [
+    'Dal bhat',
+    'Sel roti',
+    'Dal bhat (lentilhas com arroz) é a refeição cotidiana do Himalaia nepalês.',
+    'Sel roti (rosquinha de arroz frita) marca festivais como Tihar e Dashain.',
+  ],
+  Paquistão: [
+    'Nihari',
+    'Gulab jamun paquistanês',
+    'Nihari (ensopado lento de carne) é o café da manhã real de Karachi e Lahore.',
+    'Gulab jamun e jalebi dominam as doceiras paquistanesas em Eid.',
+  ],
+  Singapura: [
+    'Hainanese chicken rice',
+    'Ice kacang',
+    'Chicken rice é candidato a prato nacional de Singapura, simples e preciso.',
+    'Ice kacang (gelo colorido com feijão e geleia) é a sobremesa hawker clássica.',
+  ],
+  'Sri Lanka': [
+    'Rice and curry cingalês',
+    'Watalappan',
+    'O rice and curry cingalês reúne vários molhos, sambols e arroz em uma só bandeja.',
+    'Watalappan (pudim de coco com jaggery e cardamomo) tem raiz malaia-cingalesa.',
+  ],
+  Tajiquistão: [
+    'Qurutob',
+    'Halwa tajique',
+    'Qurutob (pão com queijo seco e vegetais) é o prato nacional tajique.',
+    'Halwa de farinha e açúcar marca casamentos e Novruz.',
+  ],
+  Tailândia: [
+    'Pad Thai',
+    'Mango sticky rice',
+    'Pad Thai virou embaixador da cozinha tailandesa: macarrão de arroz, tamarindo e amendoim.',
+    'Khao niao mamuang (arroz glutinoso com manga) é a sobremesa do verão tailandês.',
+  ],
+  'Timor-Leste': [
+    'Ikan sabuko',
+    'Bolo de milho timorense',
+    'Peixe grelhado com temperos locais e arroz é a base da mesa timorense.',
+    'Bolos de milho e coco refletem a influência portuguesa e austronésia.',
+  ],
+  Turcomenistão: [
+    'Palaw turcomeno',
+    'Chuck-chuck',
+    'Palaw (pilaf) com carne e cenoura é o centro dos banquetes turcomenos.',
+    'Chuck-chuck (massa frita com mel) é o doce festivo da Ásia Central.',
+  ],
+  Uzbequistão: [
+    'Plov uzbeque',
+    'Navat / halva',
+    'O plov uzbeque, cozido em kazan, é patrimônio cultural e prato nacional.',
+    'Cristais de açúcar (navat) e halvah fecham as refeições com chá verde.',
+  ],
+  Vietnã: [
+    'Phở',
+    'Chè',
+    'Phở (caldo de ossos com macarrão de arroz) é o prato mais icônico do Vietnã.',
+    'Chè são sobremesas líquidas de feijão, coco e geleias — infinitas variações regionais.',
+  ],
+  Taiwan: [
+    'Beef noodle soup',
+    'Mochi / taro balls',
+    'A sopa de macarrão com carne de Taiwan é candidata a prato nacional moderno.',
+    'Bolinhos de taro e mochi em calda de gergelim são clássicos de rua de Taipei.',
+  ],
+  'Arábia Saudita': [
+    'Kabsa',
+    'Rangeena / basbousa',
+    'Kabsa (arroz com carne e especiarias) é o prato nacional saudita.',
+    'Doces de sêmola e tâmaras dominam as mesas de Ramadã e Eid.',
+  ],
+  Bahrein: [
+    'Machboos',
+    'Halwa bahraini',
+    'Machboos (arroz especiado com carne ou peixe) é o prato nacional baremita.',
+    'Halwa bahraini, gelatinosa e azafranada, é souvenir e sobremesa.',
+  ],
+  'Emirados Árabes Unidos': [
+    'Machboos emiráti',
+    'Luqaimat',
+    'Machboos com carne de camelo ou cordeiro marca banquetes emiráticos.',
+    'Luqaimat (bolinhas fritas com xarope de tâmara) são o doce do Ramadã em Dubai.',
+  ],
+  Iêmen: [
+    'Saltah',
+    'Bint al-sahn',
+    'Saltah (ensopado com fenugreek batido) é o prato nacional iemenita.',
+    'Bint al-sahn (massa em camadas com mel e nigella) é a sobremesa de celebração.',
+  ],
+  Iraque: [
+    'Masgouf',
+    'Kleicha',
+    'Masgouf (peixe do Tigre aberto e grelhado) é o prato nacional iraquiano.',
+    'Kleicha (biscoitos de tâmaras) marcam o Eid e o Ano Novo assírio.',
+  ],
+  Irã: [
+    'Chelo kebab',
+    'Bastani / sholeh zard',
+    'Chelo kebab (arroz com espeto) é o prato mais pedido da culinária iraniana.',
+    'Sholeh zard (arroz-doce açafranado) e bastani (sorvete de açafrão) são clássicos persas.',
+  ],
+  Israel: [
+    'Shakshuka',
+    'Sufganiyah / halva',
+    'Shakshuka (ovos no molho de tomate) tornou-se café da manhã israelense por excelência.',
+    'Sufganiyah (sonho recheado) brilha em Hanukká; a halvah é cotidiana.',
+  ],
+  Jordânia: [
+    'Mansaf',
+    'Knafeh',
+    'Mansaf (cordeiro em molho de iogurte seco sobre arroz) é o prato nacional jordaniano.',
+    'Knafeh de queijo com massa crocante e calda é a paixão doce do Levante.',
+  ],
+  Kuwait: [
+    'Machboos kuwaitiano',
+    'Gereyiba',
+    'Machboos com especiarias do Golfo é o centro da mesa kuwaitiana.',
+    'Gereyiba (biscoitos amanteigados) acompanham o chá árabe.',
+  ],
+  Líbano: [
+    'Mezze com kibbeh',
+    'Baklava libanesa',
+    'O mezze libanês (homus, tabule, kibbeh) elevou a entrada a banquete.',
+    'A baklava libanesa, com pistache e água de flor de laranjeira, é referência mundial.',
+  ],
+  Omã: [
+    'Shuwa',
+    'Halwa omani',
+    'Shuwa (carne marinada assada em forno subterrâneo) é o banquete do Eid em Omã.',
+    'Halwa omani, escura e especiada, é oferecida a todo visitante.',
+  ],
+  Palestina: [
+    'Musakhan',
+    'Knafeh nabulsi',
+    'Musakhan (frango com cebola, sumac e pão taboon) é o prato nacional palestino.',
+    'A knafeh de Nablus é considerada por muitos a melhor do Levante.',
+  ],
+  Catar: [
+    'Machbous catari',
+    'Lugaimat',
+    'Machbous com peixe ou carne reflete a tradição marítima e beduína do Catar.',
+    'Lugaimat com xarope de tâmara são o doce do Ramadã em Doha.',
+  ],
+  Síria: [
+    'Kibbeh bil-sanieh',
+    'Baklava / maamoul',
+    'Kibbeh assado em travessa é o coração da cozinha síria doméstica.',
+    'Maamoul recheado de tâmara ou pistache marca as festas cristãs e muçulmanas.',
+  ],
+  Turquia: [
+    'Kebab / testı kebabı',
+    'Baklava turca',
+    'Os kebabs turcos variam por região; o da Anatólia é patrimônio vivo da grelha.',
+    'A baklava de Gaziantep (pistache) é a mais famosa da Turquia.',
+  ],
+  Austrália: [
+    'Meat pie australiana',
+    'Pavlova',
+    'A meat pie é o lanche nacional australiano — massa folhada com recheio de carne.',
+    'A pavlova (merengue com frutas) é disputada com a Nova Zelândia como criação nacional.',
+  ],
+  Fiji: [
+    'Kokoda',
+    'Vudi vakasoso',
+    'Kokoda (peixe no limão e leite de coco) é o ceviche fijiano.',
+    'Banana recheada com coco (vudi vakasoso) é sobremesa tradicional iTaukei.',
+  ],
+  'Ilhas Marshall': [
+    'Peixe grelhado com arroz',
+    'Doce de pandanus',
+    'Peixe fresco grelhado e arroz formam a refeição cotidiana marshallina.',
+    'Frutos de pandanus adoçados são a sobremesa nativa dos atóis.',
+  ],
+  'Ilhas Salomão': [
+    'Fish and cassava pudding',
+    'Tapioca com coco',
+    'Peixe com pudim de mandioca resume a mesa das Salomão.',
+    'Tapioca no leite de coco é a sobremesa ilhoa clássica.',
+  ],
+  Kiribati: [
+    'Peixe cru com coco',
+    'Toddy doce',
+    'Peixe marinado com coco fresco é a base proteica de Kiribati.',
+    'Seiva de palmeira (toddy) adoçada serve como bebida-sobremesa.',
+  ],
+  Micronésia: [
+    'Breadfruit com peixe',
+    'Coconut candy',
+    'Pão-de-árvore e peixe grelhado alimentam as ilhas da Micronésia.',
+    'Doces de coco são o lanche doce mais comum.',
+  ],
+  Nauru: [
+    'Peixe com arroz e coco',
+    'Frutas tropicais com coco',
+    'A cozinha nauruana gira em torno de peixe, arroz e produtos de coco.',
+    'Frutas locais com ralado de coco fecham as refeições.',
+  ],
+  'Nova Zelândia': [
+    'Hangi / lamb roast',
+    'Pavlova neozelandesa',
+    'O hâangi maori (comida cozida na terra) e o cordeiro assado definem a mesa kiwis.',
+    'A pavlova é ferocemente reivindicada como criação neozelandesa.',
+  ],
+  Palau: [
+    'Soup de caranguejo com tapioca',
+    'Tapioca com leite de coco',
+    'Frutos do mar e tapioca moldam a gastronomia de Palau.',
+    'Tapioca cremosa no coco é a sobremesa doméstica.',
+  ],
+  'Papua-Nova Guiné': [
+    'Mumu',
+    'Sago pudding',
+    'Mumu (carne e vegetais cozidos em forno de terra) é o banquete papuásio.',
+    'Pudim de sago com banana é doce tradicional das terras baixas.',
+  ],
+  Samoa: [
+    'Palusami com taro',
+    'Kopai',
+    'Palusami (folhas de taro no coco) é o prato-símbolo samoano.',
+    'Kopai (bolinhos de farinha no coco) é sobremesa de família.',
+  ],
+  Tonga: [
+    'Lu pulu',
+    'Faikakai',
+    'Lu pulu (carne envoltada em folhas de taro com coco) é o clássico tonganês.',
+    'Faikakai (massa no caramelo de coco) é a sobremesa nacional.',
+  ],
+  Tuvalu: [
+    'Peixe com pulaka',
+    'Coconut toddy sweets',
+    'Pulaka (tubérculo do pântano) com peixe sustenta a dieta tuvaluana.',
+    'Doces da seiva de coco são raridade valorizada nos atóis.',
+  ],
+  Vanuatu: [
+    'Lap lap',
+    'Tuluk',
+    'Lap lap (tubérculos e coco assados em folhas) é o prato nacional de Vanuatu.',
+    'Tuluk (banana no coco) é a sobremesa cerimonial melanesiana.',
+  ],
+};
+
+async function seedPratosECuriosidades(db) {
+  await db.ready;
+
+  await db.run('DELETE FROM curiosidade');
+  await db.run('DELETE FROM pratos');
+
+  try {
+    await db.run('ALTER SEQUENCE pratos_id_seq RESTART WITH 1');
+    await db.run('ALTER SEQUENCE curiosidade_id_seq RESTART WITH 1');
+  } catch (_) {
+    // sequência pode não existir ainda
+  }
+
+  const paises = await db.query('SELECT id, nome FROM paises');
+  let inseridos = 0;
+  let faltantes = [];
+
+  for (const pais of paises) {
+    const dados = DADOS_GASTRONOMICOS[pais.nome];
+    if (!dados) {
+      faltantes.push(pais.nome);
+      continue;
+    }
+
+    const [pratoPrincipal, sobremesa, curPrato, curSobremesa] = dados;
+
+    await db.run(
+      'INSERT INTO pratos (pais_id, prato_principal, sobremesa) VALUES (?, ?, ?)',
+      [pais.id, pratoPrincipal, sobremesa]
+    );
+
+    await db.run(
+      'INSERT INTO curiosidade (pais_id, prato_principal, sobremesa) VALUES (?, ?, ?)',
+      [pais.id, curPrato, curSobremesa]
+    );
+
+    inseridos += 1;
+  }
+
+  return { inseridos, faltantes };
+}
+
+module.exports = {
+  DADOS_GASTRONOMICOS,
+  seedPratosECuriosidades,
+};

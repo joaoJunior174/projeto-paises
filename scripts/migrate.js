@@ -4,6 +4,7 @@ const db = require('../src/config/database');
 const migrations = [
   require('../migrations/20240721000001_create_tables'),
   require('../migrations/20240721000002_telefone_para_email'),
+  require('../migrations/20240721000003_pratos_curiosidade'),
 ];
 
 async function ensureMigrationsTable() {

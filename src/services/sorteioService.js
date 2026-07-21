@@ -33,6 +33,43 @@ async function listarPaisesDisponiveis() {
   );
 }
 
+async function carregarGastronomia(executor, paisId) {
+  const pratos = await executor.query(
+    'SELECT prato_principal, sobremesa FROM pratos WHERE pais_id = ?',
+    [paisId]
+  );
+  const curiosidades = await executor.query(
+    'SELECT prato_principal, sobremesa FROM curiosidade WHERE pais_id = ?',
+    [paisId]
+  );
+
+  return {
+    prato: pratos[0] || null,
+    curiosidade: curiosidades[0] || null,
+  };
+}
+
+function montarPayloadPais(pais, gastronomia, tipo) {
+  const pratoNome =
+    tipo === 'principal'
+      ? gastronomia.prato?.prato_principal
+      : gastronomia.prato?.sobremesa;
+  const curiosidadeTexto =
+    tipo === 'principal'
+      ? gastronomia.curiosidade?.prato_principal
+      : gastronomia.curiosidade?.sobremesa;
+
+  return {
+    id: pais.id,
+    nome: pais.nome,
+    continente: pais.continente,
+    prato: pratoNome || 'Prato típico a descobrir',
+    curiosidade:
+      curiosidadeTexto ||
+      'Curiosidade gastronômica em breve para este país.',
+  };
+}
+
 function sortearComPeso(paises) {
   if (!paises.length) {
     return null;
@@ -106,18 +143,13 @@ async function realizarSorteio(email) {
       [emailNormalizado, principal.id, sobremesa.id]
     );
 
+    const gastroPrincipal = await carregarGastronomia(trx, principal.id);
+    const gastroSobremesa = await carregarGastronomia(trx, sobremesa.id);
+
     return {
       email: emailNormalizado,
-      prato_principal: {
-        id: principal.id,
-        nome: principal.nome,
-        continente: principal.continente,
-      },
-      sobremesa: {
-        id: sobremesa.id,
-        nome: sobremesa.nome,
-        continente: sobremesa.continente,
-      },
+      prato_principal: montarPayloadPais(principal, gastroPrincipal, 'principal'),
+      sobremesa: montarPayloadPais(sobremesa, gastroSobremesa, 'sobremesa'),
     };
   });
 }

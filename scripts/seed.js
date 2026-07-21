@@ -7,6 +7,10 @@ runSeed(db)
     console.log(
       `Seed concluído: ${info.total} países. Excluídos: ${info.excluidos.join(', ')}`
     );
+    console.log(`Pratos/curiosidades inseridos: ${info.pratos}`);
+    if (info.faltantes?.length) {
+      console.warn(`Países sem dados gastronômicos: ${info.faltantes.join(', ')}`);
+    }
   })
   .catch((err) => {
     console.error(err);

@@ -220,8 +220,17 @@ function listaPaises() {
   ];
 }
 
+const { seedPratosECuriosidades } = require('./seedPratosCuriosidades');
+
 async function runSeed(db) {
   await db.ready;
+
+  try {
+    await db.run('DELETE FROM curiosidade');
+    await db.run('DELETE FROM pratos');
+  } catch (_) {
+    // tabelas podem ainda não existir
+  }
 
   await db.run('DELETE FROM exclusoes');
   await db.run('DELETE FROM escolhidos');
@@ -230,6 +239,8 @@ async function runSeed(db) {
   try {
     await db.run('ALTER SEQUENCE paises_id_seq RESTART WITH 1');
     await db.run('ALTER SEQUENCE exclusoes_id_seq RESTART WITH 1');
+    await db.run('ALTER SEQUENCE pratos_id_seq RESTART WITH 1');
+    await db.run('ALTER SEQUENCE curiosidade_id_seq RESTART WITH 1');
   } catch (_) {
     // sequência pode não existir ainda
   }
@@ -255,7 +266,14 @@ async function runSeed(db) {
     }
   }
 
-  return { total: paises.length, excluidos: excluir };
+  const gastronomia = await seedPratosECuriosidades(db);
+
+  return {
+    total: paises.length,
+    excluidos: excluir,
+    pratos: gastronomia.inseridos,
+    faltantes: gastronomia.faltantes,
+  };
 }
 
 module.exports = {

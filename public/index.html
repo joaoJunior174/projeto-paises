@@ -24,7 +24,7 @@
       <p class="brand mb-1">Sabor do Mundo</p>
       <h1 class="headline">Sorteio gastronômico</h1>
       <p class="lead-text mb-0">
-        Dois países únicos: um para o prato principal e outro para a sobremesa.
+        Duas roletas de continentes: uma para o prato principal e outra para a sobremesa.
       </p>
     </div>
   </header>
@@ -52,7 +52,7 @@
             <div class="form-text">Exemplo: nome@empresa.com</div>
 
             <button type="submit" class="btn btn-draw w-100 mt-4" id="btn-sortear">
-              Girar a roleta
+              Girar as roletas
             </button>
           </form>
 
@@ -66,28 +66,85 @@
 
       <div class="col-lg-7">
         <div class="roulette-stage">
-          <div class="roulette-wrap">
-            <div class="roulette-pointer" aria-hidden="true"></div>
-            <div class="roulette" id="roleta" aria-label="Roleta de países">
-              <div class="roulette-inner" id="roleta-inner"></div>
-              <div class="roulette-center">
-                <span>GO</span>
+          <div class="roulettes-grid">
+            <div class="roulette-block">
+              <h3 class="roulette-title">Prato principal</h3>
+              <div class="roulette-wrap">
+                <div class="roulette-pointer" aria-hidden="true"></div>
+                <div
+                  class="roulette"
+                  id="roleta-principal"
+                  aria-label="Roleta de continentes — prato principal"
+                >
+                  <div class="roulette-inner" id="roleta-principal-inner"></div>
+                  <div class="roulette-center">
+                    <span>GO</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="roulette-block">
+              <h3 class="roulette-title">Sobremesa</h3>
+              <div class="roulette-wrap">
+                <div class="roulette-pointer" aria-hidden="true"></div>
+                <div
+                  class="roulette"
+                  id="roleta-sobremesa"
+                  aria-label="Roleta de continentes — sobremesa"
+                >
+                  <div class="roulette-inner" id="roleta-sobremesa-inner"></div>
+                  <div class="roulette-center">
+                    <span>GO</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="spinning-label d-none" id="spinning-label">Sorteando países...</div>
+          <div class="spinning-label d-none" id="spinning-label">Sorteando continentes...</div>
 
           <div class="results d-none" id="resultados">
             <div class="result-item result-principal">
               <span class="result-label">Prato principal</span>
               <strong id="nome-principal">—</strong>
               <small id="cont-principal"></small>
+
+              <button
+                type="button"
+                class="expand-toggle"
+                id="toggle-prato-principal"
+                aria-expanded="false"
+                aria-controls="detalhe-prato-principal"
+              >
+                <span class="expand-preview" id="preview-prato-principal">—</span>
+                <span class="expand-hint">Toque para expandir</span>
+              </button>
+              <div class="expand-panel" id="detalhe-prato-principal" hidden>
+                <p class="expand-dish" id="prato-principal-nome"></p>
+                <p class="expand-curiosity" id="curiosidade-principal"></p>
+              </div>
             </div>
+
             <div class="result-item result-sobremesa">
               <span class="result-label">Sobremesa</span>
               <strong id="nome-sobremesa">—</strong>
               <small id="cont-sobremesa"></small>
+
+              <button
+                type="button"
+                class="expand-toggle"
+                id="toggle-prato-sobremesa"
+                aria-expanded="false"
+                aria-controls="detalhe-prato-sobremesa"
+              >
+                <span class="expand-preview" id="preview-prato-sobremesa">—</span>
+                <span class="expand-hint">Toque para expandir</span>
+              </button>
+              <div class="expand-panel" id="detalhe-prato-sobremesa" hidden>
+                <p class="expand-dish" id="prato-sobremesa-nome"></p>
+                <p class="expand-curiosity" id="curiosidade-sobremesa"></p>
+              </div>
             </div>
           </div>
         </div>
