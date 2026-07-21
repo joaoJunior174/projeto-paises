@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sorteio Gastronômico de Países</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Outfit:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <div class="page-bg"></div>
+
+  <header class="site-header">
+    <div class="container py-4">
+      <p class="brand mb-1">Sabor do Mundo</p>
+      <h1 class="headline">Sorteio gastronômico</h1>
+      <p class="lead-text mb-0">
+        Dois países únicos: um para o prato principal e outro para a sobremesa.
+      </p>
+    </div>
+  </header>
+
+  <main class="container pb-5">
+    <section class="row g-4 align-items-start">
+      <div class="col-lg-5">
+        <div class="panel">
+          <h2 class="panel-title">Seu e-mail</h2>
+          <p class="panel-desc">
+            Informe seu e-mail para participar do sorteio. Cada e-mail joga uma vez.
+          </p>
+
+          <form id="form-sorteio" novalidate>
+            <label for="email" class="form-label">E-mail</label>
+            <input
+              type="email"
+              class="form-control form-control-lg"
+              id="email"
+              name="email"
+              placeholder="nome@empresa.com"
+              required
+              autocomplete="email"
+            />
+            <div class="form-text">Exemplo: nome@empresa.com</div>
+
+            <button type="submit" class="btn btn-draw w-100 mt-4" id="btn-sortear">
+              Girar a roleta
+            </button>
+          </form>
+
+          <div id="alerta" class="alert mt-3 d-none" role="alert"></div>
+
+          <div class="stats mt-4">
+            <span id="total-paises">—</span> países disponíveis
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-7">
+        <div class="roulette-stage">
+          <div class="roulette-wrap">
+            <div class="roulette-pointer" aria-hidden="true"></div>
+            <div class="roulette" id="roleta" aria-label="Roleta de países">
+              <div class="roulette-inner" id="roleta-inner"></div>
+              <div class="roulette-center">
+                <span>GO</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="spinning-label d-none" id="spinning-label">Sorteando países...</div>
+
+          <div class="results d-none" id="resultados">
+            <div class="result-item result-principal">
+              <span class="result-label">Prato principal</span>
+              <strong id="nome-principal">—</strong>
+              <small id="cont-principal"></small>
+            </div>
+            <div class="result-item result-sobremesa">
+              <span class="result-label">Sobremesa</span>
+              <strong id="nome-sobremesa">—</strong>
+              <small id="cont-sobremesa"></small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-5">
+      <div class="panel">
+        <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-3">
+          <h2 class="panel-title mb-0">Países disponíveis</h2>
+          <button type="button" class="btn btn-sm btn-outline-light" id="btn-atualizar">
+            Atualizar lista
+          </button>
+        </div>
+        <div class="countries-grid" id="lista-paises">
+          <p class="text-muted mb-0">Carregando países...</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container text-center py-4">
+      <small>Cada e-mail participa uma vez. Países sorteados saem da lista.</small>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>

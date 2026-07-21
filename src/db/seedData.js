@@ -1,0 +1,265 @@
+function pesoPorContinente(continente) {
+  const mapa = {
+    Europa: 10,
+    'América do Norte': 7,
+    Ásia: 6,
+    'América Latina': 5,
+    Oceania: 4,
+    'Oriente Médio': 4,
+    África: 2,
+    Outros: 3,
+  };
+  return mapa[continente] ?? 3;
+}
+
+function listaPaises() {
+  return [
+    ['Albânia', 'Europa'],
+    ['Alemanha', 'Europa'],
+    ['Andorra', 'Europa'],
+    ['Áustria', 'Europa'],
+    ['Bélgica', 'Europa'],
+    ['Bielorrússia', 'Europa'],
+    ['Bósnia e Herzegovina', 'Europa'],
+    ['Bulgária', 'Europa'],
+    ['Chipre', 'Europa'],
+    ['Croácia', 'Europa'],
+    ['Dinamarca', 'Europa'],
+    ['Eslováquia', 'Europa'],
+    ['Eslovênia', 'Europa'],
+    ['Espanha', 'Europa'],
+    ['Estônia', 'Europa'],
+    ['Finlândia', 'Europa'],
+    ['França', 'Europa'],
+    ['Grécia', 'Europa'],
+    ['Hungria', 'Europa'],
+    ['Irlanda', 'Europa'],
+    ['Islândia', 'Europa'],
+    ['Itália', 'Europa'],
+    ['Kosovo', 'Europa'],
+    ['Letônia', 'Europa'],
+    ['Liechtenstein', 'Europa'],
+    ['Lituânia', 'Europa'],
+    ['Luxemburgo', 'Europa'],
+    ['Macedônia do Norte', 'Europa'],
+    ['Malta', 'Europa'],
+    ['Moldávia', 'Europa'],
+    ['Mônaco', 'Europa'],
+    ['Montenegro', 'Europa'],
+    ['Noruega', 'Europa'],
+    ['Países Baixos', 'Europa'],
+    ['Polônia', 'Europa'],
+    ['Portugal', 'Europa'],
+    ['Reino Unido', 'Europa'],
+    ['República Tcheca', 'Europa'],
+    ['Romênia', 'Europa'],
+    ['Rússia', 'Europa'],
+    ['San Marino', 'Europa'],
+    ['Sérvia', 'Europa'],
+    ['Suécia', 'Europa'],
+    ['Suíça', 'Europa'],
+    ['Ucrânia', 'Europa'],
+    ['Vaticano', 'Europa'],
+
+    ['Argentina', 'América Latina'],
+    ['Bolívia', 'América Latina'],
+    ['Brasil', 'América Latina'],
+    ['Chile', 'América Latina'],
+    ['Colômbia', 'América Latina'],
+    ['Costa Rica', 'América Latina'],
+    ['Cuba', 'América Latina'],
+    ['El Salvador', 'América Latina'],
+    ['Equador', 'América Latina'],
+    ['Guatemala', 'América Latina'],
+    ['Haiti', 'América Latina'],
+    ['Honduras', 'América Latina'],
+    ['México', 'América Latina'],
+    ['Nicarágua', 'América Latina'],
+    ['Panamá', 'América Latina'],
+    ['Paraguai', 'América Latina'],
+    ['Peru', 'América Latina'],
+    ['República Dominicana', 'América Latina'],
+    ['Uruguai', 'América Latina'],
+    ['Venezuela', 'América Latina'],
+    ['Belize', 'América Latina'],
+    ['Guiana', 'América Latina'],
+    ['Suriname', 'América Latina'],
+    ['Jamaica', 'América Latina'],
+    ['Trinidad e Tobago', 'América Latina'],
+    ['Barbados', 'América Latina'],
+    ['Bahamas', 'América Latina'],
+    ['Grenada', 'América Latina'],
+    ['Santa Lúcia', 'América Latina'],
+    ['São Vicente e Granadinas', 'América Latina'],
+    ['Antígua e Barbuda', 'América Latina'],
+    ['Dominica', 'América Latina'],
+    ['São Cristóvão e Névis', 'América Latina'],
+
+    ['Canadá', 'América do Norte'],
+    ['Estados Unidos', 'América do Norte'],
+
+    ['África do Sul', 'África'],
+    ['Angola', 'África'],
+    ['Argélia', 'África'],
+    ['Benin', 'África'],
+    ['Botsuana', 'África'],
+    ['Burquina Faso', 'África'],
+    ['Burundi', 'África'],
+    ['Cabo Verde', 'África'],
+    ['Camarões', 'África'],
+    ['Chade', 'África'],
+    ['Comores', 'África'],
+    ['Congo', 'África'],
+    ['Costa do Marfim', 'África'],
+    ['Djibuti', 'África'],
+    ['Egito', 'África'],
+    ['Eritreia', 'África'],
+    ['Essuatíni', 'África'],
+    ['Etiópia', 'África'],
+    ['Gabão', 'África'],
+    ['Gâmbia', 'África'],
+    ['Gana', 'África'],
+    ['Guiné', 'África'],
+    ['Guiné-Bissau', 'África'],
+    ['Guiné Equatorial', 'África'],
+    ['Lesoto', 'África'],
+    ['Libéria', 'África'],
+    ['Líbia', 'África'],
+    ['Madagascar', 'África'],
+    ['Malawi', 'África'],
+    ['Mali', 'África'],
+    ['Marrocos', 'África'],
+    ['Maurícia', 'África'],
+    ['Mauritânia', 'África'],
+    ['Moçambique', 'África'],
+    ['Namíbia', 'África'],
+    ['Níger', 'África'],
+    ['Nigéria', 'África'],
+    ['Quênia', 'África'],
+    ['República Centro-Africana', 'África'],
+    ['República Democrática do Congo', 'África'],
+    ['Ruanda', 'África'],
+    ['São Tomé e Príncipe', 'África'],
+    ['Senegal', 'África'],
+    ['Seicheles', 'África'],
+    ['Serra Leoa', 'África'],
+    ['Somália', 'África'],
+    ['Sudão', 'África'],
+    ['Sudão do Sul', 'África'],
+    ['Tanzânia', 'África'],
+    ['Togo', 'África'],
+    ['Tunísia', 'África'],
+    ['Uganda', 'África'],
+    ['Zâmbia', 'África'],
+    ['Zimbábue', 'África'],
+
+    ['Afeganistão', 'Ásia'],
+    ['Armênia', 'Ásia'],
+    ['Azerbaijão', 'Ásia'],
+    ['Bangladesh', 'Ásia'],
+    ['Bhutan', 'Ásia'],
+    ['Brunei', 'Ásia'],
+    ['Camboja', 'Ásia'],
+    ['Cazaquistão', 'Ásia'],
+    ['China', 'Ásia'],
+    ['Coreia do Norte', 'Ásia'],
+    ['Coreia do Sul', 'Ásia'],
+    ['Filipinas', 'Ásia'],
+    ['Geórgia', 'Ásia'],
+    ['Índia', 'Ásia'],
+    ['Indonésia', 'Ásia'],
+    ['Japão', 'Ásia'],
+    ['Quirguistão', 'Ásia'],
+    ['Laos', 'Ásia'],
+    ['Malásia', 'Ásia'],
+    ['Maldivas', 'Ásia'],
+    ['Mongólia', 'Ásia'],
+    ['Myanmar', 'Ásia'],
+    ['Nepal', 'Ásia'],
+    ['Paquistão', 'Ásia'],
+    ['Singapura', 'Ásia'],
+    ['Sri Lanka', 'Ásia'],
+    ['Tajiquistão', 'Ásia'],
+    ['Tailândia', 'Ásia'],
+    ['Timor-Leste', 'Ásia'],
+    ['Turcomenistão', 'Ásia'],
+    ['Uzbequistão', 'Ásia'],
+    ['Vietnã', 'Ásia'],
+    ['Taiwan', 'Ásia'],
+
+    ['Arábia Saudita', 'Oriente Médio'],
+    ['Bahrein', 'Oriente Médio'],
+    ['Emirados Árabes Unidos', 'Oriente Médio'],
+    ['Iêmen', 'Oriente Médio'],
+    ['Iraque', 'Oriente Médio'],
+    ['Irã', 'Oriente Médio'],
+    ['Israel', 'Oriente Médio'],
+    ['Jordânia', 'Oriente Médio'],
+    ['Kuwait', 'Oriente Médio'],
+    ['Líbano', 'Oriente Médio'],
+    ['Omã', 'Oriente Médio'],
+    ['Palestina', 'Oriente Médio'],
+    ['Catar', 'Oriente Médio'],
+    ['Síria', 'Oriente Médio'],
+    ['Turquia', 'Oriente Médio'],
+
+    ['Austrália', 'Oceania'],
+    ['Fiji', 'Oceania'],
+    ['Ilhas Marshall', 'Oceania'],
+    ['Ilhas Salomão', 'Oceania'],
+    ['Kiribati', 'Oceania'],
+    ['Micronésia', 'Oceania'],
+    ['Nauru', 'Oceania'],
+    ['Nova Zelândia', 'Oceania'],
+    ['Palau', 'Oceania'],
+    ['Papua-Nova Guiné', 'Oceania'],
+    ['Samoa', 'Oceania'],
+    ['Tonga', 'Oceania'],
+    ['Tuvalu', 'Oceania'],
+    ['Vanuatu', 'Oceania'],
+  ];
+}
+
+async function runSeed(db) {
+  await db.ready;
+
+  await db.run('DELETE FROM exclusoes');
+  await db.run('DELETE FROM escolhidos');
+  await db.run('DELETE FROM paises');
+
+  try {
+    await db.run('ALTER SEQUENCE paises_id_seq RESTART WITH 1');
+    await db.run('ALTER SEQUENCE exclusoes_id_seq RESTART WITH 1');
+  } catch (_) {
+    // sequência pode não existir ainda
+  }
+
+  const paises = listaPaises();
+
+  for (const [nome, continente] of paises) {
+    await db.run('INSERT INTO paises (nome, continente, peso) VALUES (?, ?, ?)', [
+      nome,
+      continente,
+      pesoPorContinente(continente),
+    ]);
+  }
+
+  const excluir = ['Brasil', 'Japão', 'Canadá'];
+  for (const nome of excluir) {
+    const rows = await db.query('SELECT id FROM paises WHERE nome = ?', [nome]);
+    if (rows[0]) {
+      await db.run('INSERT INTO exclusoes (pais_id, motivo) VALUES (?, ?)', [
+        rows[0].id,
+        'Exclusão inicial do seed',
+      ]);
+    }
+  }
+
+  return { total: paises.length, excluidos: excluir };
+}
+
+module.exports = {
+  listaPaises,
+  pesoPorContinente,
+  runSeed,
+};

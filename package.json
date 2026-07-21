@@ -1,0 +1,25 @@
+{
+  "name": "projeto-paises",
+  "version": "1.0.0",
+  "description": "Sorteio de países para prato principal e sobremesa",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "migrate": "node scripts/migrate.js",
+    "migrate:rollback": "node scripts/migrate.js --rollback",
+    "seed": "node scripts/seed.js",
+    "setup": "node scripts/migrate.js && node scripts/seed.js",
+    "db:create": "node scripts/createDatabase.js",
+    "test:email": "node scripts/testEmailFlow.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "pg": "^8.13.1"
+  }
+}
