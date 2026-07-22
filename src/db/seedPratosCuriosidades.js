@@ -1,7 +1,11 @@
 /**
  * Pratos típicos e curiosidades por país.
  * Formato: [prato_principal, sobremesa, fato_prato, fato_sobremesa, img_keyword_prato, img_keyword_sobremesa]
+ * Imagens locais em public/img/pratos/{slug-pais}-{principal|sobremesa}.jpg
  */
+const fs = require('fs');
+const path = require('path');
+
 function montarCuriosidade(pais, nomePrato, fato, tipo) {
   return [
     `Dica e recomendação: ao explorar a culinária de ${pais}, experimente ${nomePrato} como ${tipo === 'principal' ? 'prato principal' : 'sobremesa'}.`,
@@ -12,13 +16,26 @@ function montarCuriosidade(pais, nomePrato, fato, tipo) {
   ].join(' ');
 }
 
-function imagemUrl(keyword, salt) {
-  let h = 0;
-  const s = String(keyword) + String(salt);
-  for (let i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) >>> 0;
-  const lock = h % 100000;
-  const tags = encodeURIComponent(String(keyword).replace(/\s+/g, ','));
-  return `https://loremflickr.com/640/400/${tags},food?lock=${lock}`;
+function slugify(texto) {
+  return String(texto)
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '')
+    .slice(0, 80);
+}
+
+/**
+ * Retorna caminho público da imagem local do prato, ou null se não existir.
+ */
+function imagemUrl(pais, tipo) {
+  const file = `${slugify(pais)}-${tipo}.jpg`;
+  const abs = path.join(__dirname, '..', '..', 'public', 'img', 'pratos', file);
+  if (fs.existsSync(abs) && fs.statSync(abs).size > 2000) {
+    return `/img/pratos/${file}`;
+  }
+  return null;
 }
 
 const DADOS_GASTRONOMICOS = {
@@ -1624,10 +1641,10 @@ async function seedPratosECuriosidades(db) {
       continue;
     }
 
-    const [pratoPrincipal, sobremesa, fatoPrato, fatoSobremesa, imgPrato, imgSobremesa] = dados;
+    const [pratoPrincipal, sobremesa, fatoPrato, fatoSobremesa] = dados;
 
-    const imagemPrato = imagemUrl(imgPrato, pais.id);
-    const imagemSobremesa = imagemUrl(imgSobremesa, pais.id + '_s');
+    const imagemPrato = imagemUrl(pais.nome, 'principal');
+    const imagemSobremesa = imagemUrl(pais.nome, 'sobremesa');
 
     await db.run(
       'INSERT INTO pratos (pais_id, prato_principal, sobremesa, imagem_prato_principal, imagem_sobremesa) VALUES (?, ?, ?, ?, ?)',
@@ -1653,4 +1670,5 @@ module.exports = {
   seedPratosECuriosidades,
   montarCuriosidade,
   imagemUrl,
+  slugify,
 };

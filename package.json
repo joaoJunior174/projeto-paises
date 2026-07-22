@@ -9,7 +9,10 @@
     "migrate": "node scripts/migrate.js",
     "migrate:rollback": "node scripts/migrate.js --rollback",
     "seed": "node scripts/seed.js",
-    "setup": "node scripts/migrate.js && node scripts/seed.js",
+    "images:download": "node scripts/downloadPratoImages.js",
+    "images:fill": "node scripts/fillMissingPratoImages.js",
+    "images:validate": "node scripts/validatePratoImages.js",
+    "setup": "node scripts/migrate.js && node scripts/downloadPratoImages.js && node scripts/seed.js",
     "db:create": "node scripts/createDatabase.js",
     "test:email": "node scripts/testEmailFlow.js"
   },

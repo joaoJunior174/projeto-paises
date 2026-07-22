@@ -455,6 +455,10 @@ body {
   aspect-ratio: 16 / 10;
 }
 
+.expand-image-wrap[hidden] {
+  display: none !important;
+}
+
 .expand-image-wrap img {
   display: block;
   width: 100%;

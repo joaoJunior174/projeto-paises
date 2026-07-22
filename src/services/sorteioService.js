@@ -1,4 +1,5 @@
 const db = require('../config/database');
+const { imagemUrl } = require('../db/seedPratosCuriosidades');
 
 async function idsPaisesJaEscolhidos(executor = db) {
   const rows = await executor.query(
@@ -60,10 +61,16 @@ function montarPayloadPais(pais, gastronomia, tipo) {
     tipo === 'principal'
       ? gastronomia.curiosidade?.prato_principal
       : gastronomia.curiosidade?.sobremesa;
-  const imagem =
+
+  // Prefere arquivo local existente; ignora placeholder / caminho inválido do banco
+  const imagemLocal = imagemUrl(pais.nome, tipo);
+  const imagemBanco =
     tipo === 'principal'
       ? gastronomia.prato?.imagem_prato_principal
       : gastronomia.prato?.imagem_sobremesa;
+  const imagem =
+    imagemLocal ||
+    (imagemBanco && !String(imagemBanco).includes('placeholder') ? imagemBanco : null);
 
   return {
     id: pais.id,

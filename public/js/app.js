@@ -178,16 +178,24 @@
 
   function setImagem(imgEl, url, alt) {
     if (!imgEl) return;
+    const wrap = imgEl.closest('.expand-image-wrap');
+
     if (url) {
-      imgEl.onerror = () => {
-        imgEl.hidden = true;
+      imgEl.onload = () => {
+        imgEl.hidden = false;
+        if (wrap) wrap.hidden = false;
       };
-      imgEl.src = url;
+      imgEl.onerror = () => {
+        imgEl.removeAttribute('src');
+        imgEl.hidden = true;
+        if (wrap) wrap.hidden = true;
+      };
       imgEl.alt = alt || 'Prato típico';
-      imgEl.hidden = false;
+      imgEl.src = url;
     } else {
       imgEl.removeAttribute('src');
       imgEl.hidden = true;
+      if (wrap) wrap.hidden = true;
     }
   }
 

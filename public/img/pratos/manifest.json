@@ -1,0 +1,2959 @@
+{
+  "Albânia|principal": {
+    "pais": "Albânia",
+    "tipo": "principal",
+    "prato": "Tavë kosi (cordeiro com iogurte)",
+    "arquivo": "/img/pratos/albania-principal.jpg",
+    "status": "local"
+  },
+  "Albânia|sobremesa": {
+    "pais": "Albânia",
+    "tipo": "sobremesa",
+    "prato": "Baklava de nozes",
+    "arquivo": "/img/pratos/albania-sobremesa.jpg",
+    "status": "local"
+  },
+  "Alemanha|principal": {
+    "pais": "Alemanha",
+    "tipo": "principal",
+    "prato": "Schnitzel com batatas",
+    "arquivo": "/img/pratos/alemanha-principal.jpg",
+    "status": "local"
+  },
+  "Alemanha|sobremesa": {
+    "pais": "Alemanha",
+    "tipo": "sobremesa",
+    "prato": "Apfelstrudel",
+    "arquivo": "/img/pratos/alemanha-sobremesa.jpg",
+    "status": "local"
+  },
+  "Andorra|principal": {
+    "pais": "Andorra",
+    "tipo": "principal",
+    "prato": "Escudella (ensopado de montanha)",
+    "arquivo": "/img/pratos/andorra-principal.jpg",
+    "status": "local"
+  },
+  "Andorra|sobremesa": {
+    "pais": "Andorra",
+    "tipo": "sobremesa",
+    "prato": "Crema catalana",
+    "arquivo": "/img/pratos/andorra-sobremesa.jpg",
+    "status": "local"
+  },
+  "Áustria|principal": {
+    "pais": "Áustria",
+    "tipo": "principal",
+    "prato": "Wiener Schnitzel",
+    "arquivo": "/img/pratos/austria-principal.jpg",
+    "status": "local"
+  },
+  "Áustria|sobremesa": {
+    "pais": "Áustria",
+    "tipo": "sobremesa",
+    "prato": "Sachertorte",
+    "arquivo": "/img/pratos/austria-sobremesa.jpg",
+    "status": "local"
+  },
+  "Bélgica|principal": {
+    "pais": "Bélgica",
+    "tipo": "principal",
+    "prato": "Carbonade flamande com fritas",
+    "arquivo": "/img/pratos/belgica-principal.jpg",
+    "fonte": "en.wiki",
+    "titulo": "Flemish stew",
+    "query": "Carbonade",
+    "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Jielbeaumadier_carbonade_flamande_2010.jpg/330px-Jielbeaumadier_carbonade_flamande_2010.jpg",
+    "bytes": 26220,
+    "status": "ok"
+  },
+  "Bélgica|sobremesa": {
+    "pais": "Bélgica",
+    "tipo": "sobremesa",
+    "prato": "Waffle belga com chocolate",
+    "arquivo": "/img/pratos/belgica-sobremesa.jpg",
+    "status": "local"
+  },
+  "Bielorrússia|principal": {
+    "pais": "Bielorrússia",
+    "tipo": "principal",
+    "prato": "Draniki (panquecas de batata)",
+    "arquivo": "/img/pratos/bielorrussia-principal.jpg",
+    "status": "local"
+  },
+  "Bielorrússia|sobremesa": {
+    "pais": "Bielorrússia",
+    "tipo": "sobremesa",
+    "prato": "Syrniki com mel",
+    "arquivo": "/img/pratos/bielorrussia-sobremesa.jpg",
+    "status": "local"
+  },
+  "Bósnia e Herzegovina|principal": {
+    "pais": "Bósnia e Herzegovina",
+    "tipo": "principal",
+    "prato": "Ćevapi com pão somun",
+    "arquivo": "/img/pratos/bosnia-e-herzegovina-principal.jpg",
+    "status": "local"
+  },
+  "Bósnia e Herzegovina|sobremesa": {
+    "pais": "Bósnia e Herzegovina",
+    "tipo": "sobremesa",
+    "prato": "Tufahija (maçã recheada)",
+    "arquivo": "/img/pratos/bosnia-e-herzegovina-sobremesa.jpg",
+    "status": "local"
+  },
+  "Bulgária|principal": {
+    "pais": "Bulgária",
+    "tipo": "principal",
+    "prato": "Shopska salata com queijo sirene",
+    "arquivo": "/img/pratos/bulgaria-principal.jpg",
+    "status": "local"
+  },
+  "Bulgária|sobremesa": {
+    "pais": "Bulgária",
+    "tipo": "sobremesa",
+    "prato": "Banitsa doce",
+    "arquivo": "/img/pratos/bulgaria-sobremesa.jpg",
+    "fonte": "en.wiki",
+    "titulo": "Banitsa",
+    "query": "Banitsa",
+    "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/%D0%92%D0%BA%D1%83%D1%81%D0%BD%D0%B0_%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%B0_%D0%B1%D0%B0%D0%BD%D0%B8%D1%86%D0%B0.JPG/330px-%D0%92%D0%BA%D1%83%D1%81%D0%BD%D0%B0_%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%B0_%D0%B1%D0%B0%D0%BD%D0%B8%D1%86%D0%B0.JPG",
+    "bytes": 29982,
+    "status": "ok"
+  },
+  "Chipre|principal": {
+    "pais": "Chipre",
+    "tipo": "principal",
+    "prato": "Souvlaki com halloumi",
+    "arquivo": "/img/pratos/chipre-principal.jpg",
+    "status": "local"
+  },
+  "Chipre|sobremesa": {
+    "pais": "Chipre",
+    "tipo": "sobremesa",
+    "prato": "Loukoumades",
+    "arquivo": "/img/pratos/chipre-sobremesa.jpg",
+    "status": "local"
+  },
+  "Croácia|principal": {
+    "pais": "Croácia",
+    "tipo": "principal",
+    "prato": "Pašticada (carne ao molho)",
+    "arquivo": "/img/pratos/croacia-principal.jpg",
+    "status": "local"
+  },
+  "Croácia|sobremesa": {
+    "pais": "Croácia",
+    "tipo": "sobremesa",
+    "prato": "Fritule",
+    "arquivo": "/img/pratos/croacia-sobremesa.jpg",
+    "status": "local"
+  },
+  "Dinamarca|principal": {
+    "pais": "Dinamarca",
+    "tipo": "principal",
+    "prato": "Smørrebrød (sanduíches abertos)",
+    "arquivo": "/img/pratos/dinamarca-principal.jpg",
+    "status": "local"
+  },
+  "Dinamarca|sobremesa": {
+    "pais": "Dinamarca",
+    "tipo": "sobremesa",
+    "prato": "Æbleskiver",
+    "arquivo": "/img/pratos/dinamarca-sobremesa.jpg",
+    "status": "local"
+  },
+  "Eslováquia|principal": {
+    "pais": "Eslováquia",
+    "tipo": "principal",
+    "prato": "Bryndzové halušky",
+    "arquivo": "/img/pratos/eslovaquia-principal.jpg",
+    "status": "local"
+  },
+  "Eslováquia|sobremesa": {
+    "pais": "Eslováquia",
+    "tipo": "sobremesa",
+    "prato": "Štrúdľa de maçã",
+    "arquivo": "/img/pratos/eslovaquia-sobremesa.jpg",
+    "status": "local"
+  },
+  "Eslovênia|principal": {
+    "pais": "Eslovênia",
+    "tipo": "principal",
+    "prato": "Kranjska klobasa com chucrute",
+    "arquivo": "/img/pratos/eslovenia-principal.jpg",
+    "status": "local"
+  },
+  "Eslovênia|sobremesa": {
+    "pais": "Eslovênia",
+    "tipo": "sobremesa",
+    "prato": "Potica",
+    "arquivo": "/img/pratos/eslovenia-sobremesa.jpg",
+    "status": "local"
+  },
+  "Espanha|principal": {
+    "pais": "Espanha",
+    "tipo": "principal",
+    "prato": "Paella valenciana",
+    "arquivo": "/img/pratos/espanha-principal.jpg",
+    "status": "local"
+  },
+  "Espanha|sobremesa": {
+    "pais": "Espanha",
+    "tipo": "sobremesa",
+    "prato": "Churros com chocolate",
+    "arquivo": "/img/pratos/espanha-sobremesa.jpg",
+    "status": "local"
+  },
+  "Estônia|principal": {
+    "pais": "Estônia",
+    "tipo": "principal",
+    "prato": "Verivorst com chucrute",
+    "arquivo": "/img/pratos/estonia-principal.jpg",
+    "status": "local"
+  },
+  "Estônia|sobremesa": {
+    "pais": "Estônia",
+    "tipo": "sobremesa",
+    "prato": "Kama com iogurte",
+    "arquivo": "/img/pratos/estonia-sobremesa.jpg",
+    "status": "local"
+  },
+  "Finlândia|principal": {
+    "pais": "Finlândia",
+    "tipo": "principal",
+    "prato": "Karjalanpaisti (ensopado da Carélia)",
+    "arquivo": "/img/pratos/finlandia-principal.jpg",
+    "status": "local"
+  },
+  "Finlândia|sobremesa": {
+    "pais": "Finlândia",
+    "tipo": "sobremesa",
+    "prato": "Mustikkapiirakka (torta de mirtilo)",
+    "arquivo": "/img/pratos/finlandia-sobremesa.jpg",
+    "status": "local"
+  },
+  "França|principal": {
+    "pais": "França",
+    "tipo": "principal",
+    "prato": "Boeuf bourguignon",
+    "arquivo": "/img/pratos/franca-principal.jpg",
+    "status": "local"
+  },
+  "França|sobremesa": {
+    "pais": "França",
+    "tipo": "sobremesa",
+    "prato": "Crème brûlée",
+    "arquivo": "/img/pratos/franca-sobremesa.jpg",
+    "status": "local"
+  },
+  "Grécia|principal": {
+    "pais": "Grécia",
+    "tipo": "principal",
+    "prato": "Moussaka",
+    "arquivo": "/img/pratos/grecia-principal.jpg",
+    "status": "local"
+  },
+  "Grécia|sobremesa": {
+    "pais": "Grécia",
+    "tipo": "sobremesa",
+    "prato": "Baklava",
+    "arquivo": "/img/pratos/grecia-sobremesa.jpg",
+    "status": "local"
+  },
+  "Hungria|principal": {
+    "pais": "Hungria",
+    "tipo": "principal",
+    "prato": "Gulyás (goulash)",
+    "arquivo": "/img/pratos/hungria-principal.jpg",
+    "status": "local"
+  },
+  "Hungria|sobremesa": {
+    "pais": "Hungria",
+    "tipo": "sobremesa",
+    "prato": "Dobos torte",
+    "arquivo": "/img/pratos/hungria-sobremesa.jpg",
+    "status": "local"
+  },
+  "Irlanda|principal": {
+    "pais": "Irlanda",
+    "tipo": "principal",
+    "prato": "Irish stew",
+    "arquivo": "/img/pratos/irlanda-principal.jpg",
+    "status": "local"
+  },
+  "Irlanda|sobremesa": {
+    "pais": "Irlanda",
+    "tipo": "sobremesa",
+    "prato": "Apple pie irlandesa",
+    "arquivo": "/img/pratos/irlanda-sobremesa.jpg",
+    "status": "local"
+  },
+  "Islândia|principal": {
+    "pais": "Islândia",
+    "tipo": "principal",
+    "prato": "Lamb guisado com tubérculos",
+    "arquivo": "/img/pratos/islandia-principal.jpg",
+    "status": "local"
+  },
+  "Islândia|sobremesa": {
+    "pais": "Islândia",
+    "tipo": "sobremesa",
+    "prato": "Skyr com berries",
+    "arquivo": "/img/pratos/islandia-sobremesa.jpg",
+    "status": "local"
+  },
+  "Itália|principal": {
+    "pais": "Itália",
+    "tipo": "principal",
+    "prato": "Ossobuco alla milanese",
+    "arquivo": "/img/pratos/italia-principal.jpg",
+    "status": "local"
+  },
+  "Itália|sobremesa": {
+    "pais": "Itália",
+    "tipo": "sobremesa",
+    "prato": "Tiramisù",
+    "arquivo": "/img/pratos/italia-sobremesa.jpg",
+    "status": "local"
+  },
+  "Kosovo|principal": {
+    "pais": "Kosovo",
+    "tipo": "principal",
+    "prato": "Flija",
+    "arquivo": "/img/pratos/kosovo-principal.jpg",
+    "status": "local"
+  },
+  "Kosovo|sobremesa": {
+    "pais": "Kosovo",
+    "tipo": "sobremesa",
+    "prato": "Tespishte",
+    "arquivo": "/img/pratos/kosovo-sobremesa.jpg",
+    "status": "local"
+  },
+  "Letônia|principal": {
+    "pais": "Letônia",
+    "tipo": "principal",
+    "prato": "Pelēkie zirņi ar speķi (ervilhas com bacon)",
+    "arquivo": "/img/pratos/letonia-principal.jpg",
+    "status": "local"
+  },
+  "Letônia|sobremesa": {
+    "pais": "Letônia",
+    "tipo": "sobremesa",
+    "prato": "Rupjmaizes kārtojums",
+    "arquivo": "/img/pratos/letonia-sobremesa.jpg",
+    "status": "local"
+  },
+  "Liechtenstein|principal": {
+    "pais": "Liechtenstein",
+    "tipo": "principal",
+    "prato": "Käsknöpfle",
+    "arquivo": "/img/pratos/liechtenstein-principal.jpg",
+    "status": "local"
+  },
+  "Liechtenstein|sobremesa": {
+    "pais": "Liechtenstein",
+    "tipo": "sobremesa",
+    "prato": "Apfelküchle",
+    "arquivo": "/img/pratos/liechtenstein-sobremesa.jpg",
+    "status": "local"
+  },
+  "Lituânia|principal": {
+    "pais": "Lituânia",
+    "tipo": "principal",
+    "prato": "Cepelinai",
+    "arquivo": "/img/pratos/lituania-principal.jpg",
+    "status": "local"
+  },
+  "Lituânia|sobremesa": {
+    "pais": "Lituânia",
+    "tipo": "sobremesa",
+    "prato": "Šakotis",
+    "arquivo": "/img/pratos/lituania-sobremesa.jpg",
+    "status": "local"
+  },
+  "Luxemburgo|principal": {
+    "pais": "Luxemburgo",
+    "tipo": "principal",
+    "prato": "Judd mat Gaardebounen",
+    "arquivo": "/img/pratos/luxemburgo-principal.jpg",
+    "status": "local"
+  },
+  "Luxemburgo|sobremesa": {
+    "pais": "Luxemburgo",
+    "tipo": "sobremesa",
+    "prato": "Quetschentaart",
+    "arquivo": "/img/pratos/luxemburgo-sobremesa.jpg",
+    "fonte": "en.wiki",
+    "titulo": "Quetschentaart",
+    "query": "quetschentaart",
+    "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Quetschentaart_02.jpg/330px-Quetschentaart_02.jpg",
+    "bytes": 34114,
+    "status": "ok"
+  },
+  "Macedônia do Norte|principal": {
+    "pais": "Macedônia do Norte",
+    "tipo": "principal",
+    "prato": "Tavče gravče",
+    "arquivo": "/img/pratos/macedonia-do-norte-principal.jpg",
+    "fonte": "commons",
+    "titulo": "File:Bob - Macedonian style.jpg",
+    "query": "tavce gravce",
+    "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Bob_-_Macedonian_style.jpg/960px-Bob_-_Macedonian_style.jpg",
+    "bytes": 123729,
+    "status": "ok"
+  },
+  "Macedônia do Norte|sobremesa": {
+    "pais": "Macedônia do Norte",
+    "tipo": "sobremesa",
+    "prato": "Tulumba",
+    "arquivo": "/img/pratos/macedonia-do-norte-sobremesa.jpg",
+    "status": "local"
+  },
+  "Malta|principal": {
+    "pais": "Malta",
+    "tipo": "principal",
+    "prato": "Fenek (coelho guisado)",
+    "arquivo": "/img/pratos/malta-principal.jpg",
+    "status": "local"
+  },
+  "Malta|sobremesa": {
+    "pais": "Malta",
+    "tipo": "sobremesa",
+    "prato": "Kannoli malteses",
+    "arquivo": "/img/pratos/malta-sobremesa.jpg",
+    "status": "local"
+  },
+  "Moldávia|principal": {
+    "pais": "Moldávia",
+    "tipo": "principal",
+    "prato": "Mămăligă com brânză",
+    "arquivo": "/img/pratos/moldavia-principal.jpg",
+    "status": "local"
+  },
+  "Moldávia|sobremesa": {
+    "pais": "Moldávia",
+    "tipo": "sobremesa",
+    "prato": "Plăcintă doce",
+    "arquivo": "/img/pratos/moldavia-sobremesa.jpg",
+    "fonte": "it.wiki",
+    "titulo": "Plăcintă",
+    "query": "Plăcintă",
+    "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Placinta.jpg/330px-Placinta.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "bytes": 35412,
+    "status": "ok"
+  },
+  "Mônaco|principal": {
+    "pais": "Mônaco",
+    "tipo": "principal",
+    "prato": "Barbagiuan",
+    "arquivo": "/img/pratos/monaco-principal.jpg",
+    "status": "local"
+  },
+  "Mônaco|sobremesa": {
+    "pais": "Mônaco",
+    "tipo": "sobremesa",
+    "prato": "Fougasse doce",
+    "arquivo": "/img/pratos/monaco-sobremesa.jpg",
+    "fonte": "it.wiki",
+    "titulo": "Fougasse",
+    "query": "Fougasse",
+    "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Fougasse_007.jpg/330px-Fougasse_007.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "bytes": 27742,
+    "status": "ok"
+  },
+  "Montenegro|principal": {
+    "pais": "Montenegro",
+    "tipo": "principal",
+    "prato": "Kačamak com queijo",
+    "arquivo": "/img/pratos/montenegro-principal.jpg",
+    "status": "local"
+  },
+  "Montenegro|sobremesa": {
+    "pais": "Montenegro",
+    "tipo": "sobremesa",
+    "prato": "Priyanski kolač",
+    "arquivo": null,
+    "erro": "falha",
+    "status": "fail"
+  },
+  "Noruega|principal": {
+    "pais": "Noruega",
+    "tipo": "principal",
+    "prato": "Fårikål",
+    "arquivo": "/img/pratos/noruega-principal.jpg",
+    "fonte": "en.wiki",
+    "titulo": "Fårikål",
+    "query": "farikal",
+    "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/F%C3%A5r_i_k%C3%A5l.jpg/330px-F%C3%A5r_i_k%C3%A5l.jpg",
+    "bytes": 20763,
+    "status": "ok"
+  },
+  "Noruega|sobremesa": {
+    "pais": "Noruega",
+    "tipo": "sobremesa",
+    "prato": "Krumkake",
+    "arquivo": "/img/pratos/noruega-sobremesa.jpg",
+    "status": "local"
+  },
+  "Países Baixos|principal": {
+    "pais": "Países Baixos",
+    "tipo": "principal",
+    "prato": "Stamppot com rookworst",
+    "arquivo": "/img/pratos/paises-baixos-principal.jpg",
+    "status": "local"
+  },
+  "Países Baixos|sobremesa": {
+    "pais": "Países Baixos",
+    "tipo": "sobremesa",
+    "prato": "Poffertjes",
+    "arquivo": "/img/pratos/paises-baixos-sobremesa.jpg",
+    "status": "local"
+  },
+  "Polônia|principal": {
+    "pais": "Polônia",
+    "tipo": "principal",
+    "prato": "Bigos",
+    "arquivo": "/img/pratos/polonia-principal.jpg",
+    "status": "local"
+  },
+  "Polônia|sobremesa": {
+    "pais": "Polônia",
+    "tipo": "sobremesa",
+    "prato": "Sernik",
+    "arquivo": "/img/pratos/polonia-sobremesa.jpg",
+    "status": "local"
+  },
+  "Portugal|principal": {
+    "pais": "Portugal",
+    "tipo": "principal",
+    "prato": "Cozido à portuguesa",
+    "arquivo": "/img/pratos/portugal-principal.jpg",
+    "status": "local"
+  },
+  "Portugal|sobremesa": {
+    "pais": "Portugal",
+    "tipo": "sobremesa",
+    "prato": "Pastel de nata",
+    "arquivo": "/img/pratos/portugal-sobremesa.jpg",
+    "status": "local"
+  },
+  "Reino Unido|principal": {
+    "pais": "Reino Unido",
+    "tipo": "principal",
+    "prato": "Shepherd's pie",
+    "arquivo": "/img/pratos/reino-unido-principal.jpg",
+    "status": "local"
+  },
+  "Reino Unido|sobremesa": {
+    "pais": "Reino Unido",
+    "tipo": "sobremesa",
+    "prato": "Sticky toffee pudding",
+    "arquivo": "/img/pratos/reino-unido-sobremesa.jpg",
+    "status": "local"
+  },
+  "República Tcheca|principal": {
+    "pais": "República Tcheca",
+    "tipo": "principal",
+    "prato": "Svíčková",
+    "arquivo": "/img/pratos/republica-tcheca-principal.jpg",
+    "status": "local"
+  },
+  "República Tcheca|sobremesa": {
+    "pais": "República Tcheca",
+    "tipo": "sobremesa",
+    "prato": "Trdelník",
+    "arquivo": "/img/pratos/republica-tcheca-sobremesa.jpg",
+    "status": "local"
+  },
+  "Romênia|principal": {
+    "pais": "Romênia",
+    "tipo": "principal",
+    "prato": "Sarmale",
+    "arquivo": "/img/pratos/romenia-principal.jpg",
+    "status": "local"
+  },
+  "Romênia|sobremesa": {
+    "pais": "Romênia",
+    "tipo": "sobremesa",
+    "prato": "Papanasi",
+    "arquivo": "/img/pratos/romenia-sobremesa.jpg",
+    "fonte": "fr.wiki",
+    "titulo": "Papanași",
+    "query": "Papanasi",
+    "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Papanasi_cu_cirese.jpg/330px-Papanasi_cu_cirese.jpg",
+    "bytes": 22201,
+    "status": "ok"
+  },
+  "Rússia|principal": {
+    "pais": "Rússia",
+    "tipo": "principal",
+    "prato": "Beef Stroganoff",
+    "arquivo": "/img/pratos/russia-principal.jpg",
+    "status": "local"
+  },
+  "Rússia|sobremesa": {
+    "pais": "Rússia",
+    "tipo": "sobremesa",
+    "prato": "Blini com geleia",
+    "arquivo": "/img/pratos/russia-sobremesa.jpg",
+    "status": "local"
+  },
+  "San Marino|principal": {
+    "pais": "San Marino",
+    "tipo": "principal",
+    "prato": "Ninho de passero (pasta local)",
+    "arquivo": "/img/pratos/san-marino-principal.jpg",
+    "status": "local"
+  },
+  "San Marino|sobremesa": {
+    "pais": "San Marino",
+    "tipo": "sobremesa",
+    "prato": "Torta tre monti",
+    "arquivo": "/img/pratos/san-marino-sobremesa.jpg",
+    "status": "local"
+  },
+  "Sérvia|principal": {
+    "pais": "Sérvia",
+    "tipo": "principal",
+    "prato": "Karadjordjeva šnicla",
+    "arquivo": "/img/pratos/servia-principal.jpg",
+    "status": "local"
+  },
+  "Sérvia|sobremesa": {
+    "pais": "Sérvia",
+    "tipo": "sobremesa",
+    "prato": "Krempita",
+    "arquivo": "/img/pratos/servia-sobremesa.jpg",
+    "status": "local"
+  },
+  "Suécia|principal": {
+    "pais": "Suécia",
+    "tipo": "principal",
+    "prato": "Köttbullar (almôndegas)",
+    "arquivo": "/img/pratos/suecia-principal.jpg",
+    "status": "local"
+  },
+  "Suécia|sobremesa": {
+    "pais": "Suécia",
+    "tipo": "sobremesa",
+    "prato": "Kanelbulle",
+    "arquivo": "/img/pratos/suecia-sobremesa.jpg",
+    "status": "local"
+  },
+  "Suíça|principal": {
+    "pais": "Suíça",
+    "tipo": "principal",
+    "prato": "Fondue de queijo",
+    "arquivo": "/img/pratos/suica-principal.jpg",
+    "status": "local"
+  },
+  "Suíça|sobremesa": {
+    "pais": "Suíça",
+    "tipo": "sobremesa",
+    "prato": "Chocolate suíço com frutas",
+    "arquivo": "/img/pratos/suica-sobremesa.jpg",
+    "status": "local"
+  },
+  "Ucrânia|principal": {
+    "pais": "Ucrânia",
+    "tipo": "principal",
+    "prato": "Borscht",
+    "arquivo": "/img/pratos/ucrania-principal.jpg",
+    "status": "local"
+  },
+  "Ucrânia|sobremesa": {
+    "pais": "Ucrânia",
+    "tipo": "sobremesa",
+    "prato": "Syrniki ucranianos",
+    "arquivo": "/img/pratos/ucrania-sobremesa.jpg",
+    "fonte": "en.wiki",
+    "titulo": "Syrniki",
+    "query": "Syrniki",
+    "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Syrniki6.jpg/330px-Syrniki6.jpg",
+    "bytes": 21572,
+    "status": "ok"
+  },
+  "Vaticano|principal": {
+    "pais": "Vaticano",
+    "tipo": "principal",
+    "prato": "Pasta alla papalina",
+    "arquivo": "/img/pratos/vaticano-principal.jpg",
+    "status": "local"
+  },
+  "Vaticano|sobremesa": {
+    "pais": "Vaticano",
+    "tipo": "sobremesa",
+    "prato": "Gelato artesanal",
+    "arquivo": "/img/pratos/vaticano-sobremesa.jpg",
+    "fonte": "en.wiki",
+    "titulo": "Gelato",
+    "query": "Gelato",
+    "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/4/47/CafeMia.jpg",
+    "bytes": 25418,
+    "status": "ok"
+  },
+  "Argentina|principal": {
+    "pais": "Argentina",
+    "tipo": "principal",
+    "prato": "Asado com chimichurri",
+    "arquivo": "/img/pratos/argentina-principal.jpg",
+    "status": "local"
+  },
+  "Argentina|sobremesa": {
+    "pais": "Argentina",
+    "tipo": "sobremesa",
+    "prato": "Dulce de leche com alfajor",
+    "arquivo": "/img/pratos/argentina-sobremesa.jpg",
+    "status": "local"
+  },
+  "Bolívia|principal": {
+    "pais": "Bolívia",
+    "tipo": "principal",
+    "prato": "Salteña",
+    "arquivo": "/img/pratos/bolivia-principal.jpg",
+    "status": "local"
+  },
+  "Bolívia|sobremesa": {
+    "pais": "Bolívia",
+    "tipo": "sobremesa",
+    "prato": "Api com pastel",
+    "arquivo": "/img/pratos/bolivia-sobremesa.jpg",
+    "fonte": "commons",
+    "titulo": "File:The Scream Pastel.jpg",
+    "query": "Api com pastel",
+    "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/The_Scream_Pastel.jpg/960px-The_Scream_Pastel.jpg",
+    "bytes": 576087,
+    "status": "ok"
+  },
+  "Brasil|principal": {
+    "pais": "Brasil",
+    "tipo": "principal",
+    "prato": "Feijoada",
+    "arquivo": "/img/pratos/brasil-principal.jpg",
+    "status": "local"
+  },
+  "Brasil|sobremesa": {
+    "pais": "Brasil",
+    "tipo": "sobremesa",
+    "prato": "Brigadeiro",
+    "arquivo": "/img/pratos/brasil-sobremesa.jpg",
+    "status": "local"
+  },
+  "Chile|principal": {
+    "pais": "Chile",
+    "tipo": "principal",
+    "prato": "Pastel de choclo",
+    "arquivo": "/img/pratos/chile-principal.jpg",
+    "status": "local"
+  },
+  "Chile|sobremesa": {
+    "pais": "Chile",
+    "tipo": "sobremesa",
+    "prato": "Mote con huesillo",
+    "arquivo": "/img/pratos/chile-sobremesa.jpg",
+    "status": "local"
+  },
+  "Colômbia|principal": {
+    "pais": "Colômbia",
+    "tipo": "principal",
+    "prato": "Bandeja paisa",
+    "arquivo": "/img/pratos/colombia-principal.jpg",
+    "status": "local"
+  },
+  "Colômbia|sobremesa": {
+    "pais": "Colômbia",
+    "tipo": "sobremesa",
+    "prato": "Arequipe com obleas",
+    "arquivo": "/img/pratos/colombia-sobremesa.jpg",
+    "status": "local"
+  },
+  "Costa Rica|principal": {
+    "pais": "Costa Rica",
+    "tipo": "principal",
+    "prato": "Casado",
+    "arquivo": "/img/pratos/costa-rica-principal.jpg",
+    "status": "local"
+  },
+  "Costa Rica|sobremesa": {
+    "pais": "Costa Rica",
+    "tipo": "sobremesa",
+    "prato": "Tres leches",
+    "arquivo": "/img/pratos/costa-rica-sobremesa.jpg",
+    "status": "local"
+  },
+  "Cuba|principal": {
+    "pais": "Cuba",
+    "tipo": "principal",
+    "prato": "Ropa vieja",
+    "arquivo": "/img/pratos/cuba-principal.jpg",
+    "status": "local"
+  },
+  "Cuba|sobremesa": {
+    "pais": "Cuba",
+    "tipo": "sobremesa",
+    "prato": "Flan de caramelo",
+    "arquivo": "/img/pratos/cuba-sobremesa.jpg",
+    "status": "local"
+  },
+  "El Salvador|principal": {
+    "pais": "El Salvador",
+    "tipo": "principal",
+    "prato": "Pupusas",
+    "arquivo": "/img/pratos/el-salvador-principal.jpg",
+    "status": "local"
+  },
+  "El Salvador|sobremesa": {
+    "pais": "El Salvador",
+    "tipo": "sobremesa",
+    "prato": "Quesadilla salvadoreña",
+    "arquivo": "/img/pratos/el-salvador-sobremesa.jpg",
+    "fonte": "en.wiki",
+    "titulo": "Quesadilla",
+    "query": "Quesadilla",
+    "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Empanada_flor_de_Calabaza.jpg/330px-Empanada_flor_de_Calabaza.jpg",
+    "bytes": 31322,
+    "status": "ok"
+  },
+  "Equador|principal": {
+    "pais": "Equador",
+    "tipo": "principal",
+    "prato": "Seco de chivo",
+    "arquivo": "/img/pratos/equador-principal.jpg",
+    "status": "local"
+  },
+  "Equador|sobremesa": {
+    "pais": "Equador",
+    "tipo": "sobremesa",
+    "prato": "Pristiños com melado",
+    "arquivo": "/img/pratos/equador-sobremesa.jpg",
+    "status": "local"
+  },
+  "Guatemala|principal": {
+    "pais": "Guatemala",
+    "tipo": "principal",
+    "prato": "Pepián",
+    "arquivo": "/img/pratos/guatemala-principal.jpg",
+    "status": "local"
+  },
+  "Guatemala|sobremesa": {
+    "pais": "Guatemala",
+    "tipo": "sobremesa",
+    "prato": "Rellenitos de plátano",
+    "arquivo": "/img/pratos/guatemala-sobremesa.jpg",
+    "status": "local"
+  },
+  "Haiti|principal": {
+    "pais": "Haiti",
+    "tipo": "principal",
+    "prato": "Griot com diri kole",
+    "arquivo": "/img/pratos/haiti-principal.jpg",
+    "status": "local"
+  },
+  "Haiti|sobremesa": {
+    "pais": "Haiti",
+    "tipo": "sobremesa",
+    "prato": "Pain patate",
+    "arquivo": "/img/pratos/haiti-sobremesa.jpg",
+    "status": "local"
+  },
+  "Honduras|principal": {
+    "pais": "Honduras",
+    "tipo": "principal",
+    "prato": "Baleada",
+    "arquivo": "/img/pratos/honduras-principal.jpg",
+    "status": "local"
+  },
+  "Honduras|sobremesa": {
+    "pais": "Honduras",
+    "tipo": "sobremesa",
+    "prato": "Rosquillas",
+    "arquivo": "/img/pratos/honduras-sobremesa.jpg",
+    "status": "local"
+  },
+  "México|principal": {
+    "pais": "México",
+    "tipo": "principal",
+    "prato": "Mole poblano",
+    "arquivo": "/img/pratos/mexico-principal.jpg",
+    "status": "local"
+  },
+  "México|sobremesa": {
+    "pais": "México",
+    "tipo": "sobremesa",
+    "prato": "Churros mexicanos",
+    "arquivo": "/img/pratos/mexico-sobremesa.jpg",
+    "fonte": "commons",
+    "titulo": "File:Churros en Coyoacán.jpg",
+    "query": "Churros mexicanos",
+    "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Churros_en_Coyoac%C3%A1n.jpg/960px-Churros_en_Coyoac%C3%A1n.jpg",
+    "bytes": 109535,
+    "status": "ok"
+  },
+  "Nicarágua|principal": {
+    "pais": "Nicarágua",
+    "tipo": "principal",
+    "prato": "Gallo pinto",
+    "arquivo": "/img/pratos/nicaragua-principal.jpg",
+    "status": "local"
+  },
+  "Nicarágua|sobremesa": {
+    "pais": "Nicarágua",
+    "tipo": "sobremesa",
+    "prato": "Tres leches nicaraguense",
+    "arquivo": "/img/pratos/nicaragua-sobremesa.jpg",
+    "status": "local"
+  },
+  "Panamá|principal": {
+    "pais": "Panamá",
+    "tipo": "principal",
+    "prato": "Sancocho panamenho",
+    "arquivo": "/img/pratos/panama-principal.jpg",
+    "fonte": "fr.wiki",
+    "titulo": "Sancocho",
+    "query": "Sancocho",
+    "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Barranquilla_-_Sancocho_de_mondongo.jpg/330px-Barranquilla_-_Sancocho_de_mondongo.jpg",
+    "bytes": 26557,
+    "status": "ok"
+  },
+  "Panamá|sobremesa": {
+    "pais": "Panamá",
+    "tipo": "sobremesa",
+    "prato": "Suspiros",
+    "arquivo": "/img/pratos/panama-sobremesa.jpg",
+    "status": "local"
+  },
+  "Paraguai|principal": {
+    "pais": "Paraguai",
+    "tipo": "principal",
+    "prato": "Sopa paraguaya",
+    "arquivo": "/img/pratos/paraguai-principal.jpg",
+    "status": "local"
+  },
+  "Paraguai|sobremesa": {
+    "pais": "Paraguai",
+    "tipo": "sobremesa",
+    "prato": "Kaguyjy (mazamorra)",
+    "arquivo": "/img/pratos/paraguai-sobremesa.jpg",
+    "fonte": "commons",
+    "titulo": "File:Mazamorra de Paraguay.jpg",
+    "query": "kaguyjy",
+    "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Mazamorra_de_Paraguay.jpg/960px-Mazamorra_de_Paraguay.jpg",
+    "bytes": 64183,
+    "status": "ok"
+  },
+  "Peru|principal": {
+    "pais": "Peru",
+    "tipo": "principal",
+    "prato": "Lomo saltado",
+    "arquivo": "/img/pratos/peru-principal.jpg",
+    "status": "local"
+  },
+  "Peru|sobremesa": {
+    "pais": "Peru",
+    "tipo": "sobremesa",
+    "prato": "Suspiro de limeña",
+    "arquivo": "/img/pratos/peru-sobremesa.jpg",
+    "status": "local"
+  },
+  "República Dominicana|principal": {
+    "pais": "República Dominicana",
+    "tipo": "principal",
+    "prato": "La bandera dominicana",
+    "arquivo": "/img/pratos/republica-dominicana-principal.jpg",
+    "status": "local"
+  },
+  "República Dominicana|sobremesa": {
+    "pais": "República Dominicana",
+    "tipo": "sobremesa",
+    "prato": "Habichuelas con dulce",
+    "arquivo": "/img/pratos/republica-dominicana-sobremesa.jpg",
+    "status": "local"
+  },
+  "Uruguai|principal": {
+    "pais": "Uruguai",
+    "tipo": "principal",
+    "prato": "Chivito",
+    "arquivo": "/img/pratos/uruguai-principal.jpg",
+    "status": "local"
+  },
+  "Uruguai|sobremesa": {
+    "pais": "Uruguai",
+    "tipo": "sobremesa",
+    "prato": "Dulce de leche com chajá",
+    "arquivo": "/img/pratos/uruguai-sobremesa.jpg",
+    "status": "local"
+  },
+  "Venezuela|principal": {
+    "pais": "Venezuela",
+    "tipo": "principal",
+    "prato": "Pabellón criollo",
+    "arquivo": "/img/pratos/venezuela-principal.jpg",
+    "status": "local"
+  },
+  "Venezuela|sobremesa": {
+    "pais": "Venezuela",
+    "tipo": "sobremesa",
+    "prato": "Quesillo",
+    "arquivo": "/img/pratos/venezuela-sobremesa.jpg",
+    "status": "local"
+  },
+  "Belize|principal": {
+    "pais": "Belize",
+    "tipo": "principal",
+    "prato": "Rice and beans com stewed chicken",
+    "arquivo": "/img/pratos/belize-principal.jpg",
+    "status": "local"
+  },
+  "Belize|sobremesa": {
+    "pais": "Belize",
+    "tipo": "sobremesa",
+    "prato": "Cassava pone",
+    "arquivo": "/img/pratos/belize-sobremesa.jpg",
+    "status": "local"
+  },
+  "Guiana|principal": {
+    "pais": "Guiana",
+    "tipo": "principal",
+    "prato": "Pepperpot",
+    "arquivo": "/img/pratos/guiana-principal.jpg",
+    "status": "local"
+  },
+  "Guiana|sobremesa": {
+    "pais": "Guiana",
+    "tipo": "sobremesa",
+    "prato": "Pine tart",
+    "arquivo": "/img/pratos/guiana-sobremesa.jpg",
+    "status": "local"
+  },
+  "Suriname|principal": {
+    "pais": "Suriname",
+    "tipo": "principal",
+    "prato": "Pom",
+    "arquivo": "/img/pratos/suriname-principal.jpg",
+    "status": "local"
+  },
+  "Suriname|sobremesa": {
+    "pais": "Suriname",
+    "tipo": "sobremesa",
+    "prato": "Bojo cake",
+    "arquivo": null,
+    "erro": "sem candidatos",
+    "status": "fail"
+  },
+  "Jamaica|principal": {
+    "pais": "Jamaica",
+    "tipo": "principal",
+    "prato": "Jerk chicken",
+    "arquivo": "/img/pratos/jamaica-principal.jpg",
+    "status": "local"
+  },
+  "Jamaica|sobremesa": {
+    "pais": "Jamaica",
+    "tipo": "sobremesa",
+    "prato": "Rum cake",
+    "arquivo": "/img/pratos/jamaica-sobremesa.jpg",
+    "status": "local"
+  },
+  "Trinidad e Tobago|principal": {
+    "pais": "Trinidad e Tobago",
+    "tipo": "principal",
+    "prato": "Doubles",
+    "arquivo": "/img/pratos/trinidad-e-tobago-principal.jpg",
+    "status": "local"
+  },
+  "Trinidad e Tobago|sobremesa": {
+    "pais": "Trinidad e Tobago",
+    "tipo": "sobremesa",
+    "prato": "Sweet bread",
+    "arquivo": "/img/pratos/trinidad-e-tobago-sobremesa.jpg",
+    "status": "local"
+  },
+  "Barbados|principal": {
+    "pais": "Barbados",
+    "tipo": "principal",
+    "prato": "Cou-cou com frango estufado",
+    "arquivo": "/img/pratos/barbados-principal.jpg",
+    "status": "local"
+  },
+  "Barbados|sobremesa": {
+    "pais": "Barbados",
+    "tipo": "sobremesa",
+    "prato": "Pudding and souse",
+    "arquivo": "/img/pratos/barbados-sobremesa.jpg",
+    "status": "local"
+  },
+  "Bahamas|principal": {
+    "pais": "Bahamas",
+    "tipo": "principal",
+    "prato": "Peas and rice com frango ensopado",
+    "arquivo": "/img/pratos/bahamas-principal.jpg",
+    "status": "local"
+  },
+  "Bahamas|sobremesa": {
+    "pais": "Bahamas",
+    "tipo": "sobremesa",
+    "prato": "Guava duff",
+    "arquivo": "/img/pratos/bahamas-sobremesa.jpg",
+    "status": "local"
+  },
+  "Grenada|principal": {
+    "pais": "Grenada",
+    "tipo": "principal",
+    "prato": "Oil down com carne salgada",
+    "arquivo": "/img/pratos/grenada-principal.jpg",
+    "status": "local"
+  },
+  "Grenada|sobremesa": {
+    "pais": "Grenada",
+    "tipo": "sobremesa",
+    "prato": "Nutmeg ice cream",
+    "arquivo": "/img/pratos/grenada-sobremesa.jpg",
+    "status": "local"
+  },
+  "Santa Lúcia|principal": {
+    "pais": "Santa Lúcia",
+    "tipo": "principal",
+    "prato": "Green fig com frango ensopado",
+    "arquivo": "/img/pratos/santa-lucia-principal.jpg",
+    "status": "local"
+  },
+  "Santa Lúcia|sobremesa": {
+    "pais": "Santa Lúcia",
+    "tipo": "sobremesa",
+    "prato": "Banana bread caribenho",
+    "arquivo": "/img/pratos/santa-lucia-sobremesa.jpg",
+    "status": "local"
+  },
+  "São Vicente e Granadinas|principal": {
+    "pais": "São Vicente e Granadinas",
+    "tipo": "principal",
+    "prato": "Roasted breadfruit com frango assado",
+    "arquivo": "/img/pratos/sao-vicente-e-granadinas-principal.jpg",
+    "status": "local"
+  },
+  "São Vicente e Granadinas|sobremesa": {
+    "pais": "São Vicente e Granadinas",
+    "tipo": "sobremesa",
+    "prato": "Arrowroot pudding",
+    "arquivo": "/img/pratos/sao-vicente-e-granadinas-sobremesa.jpg",
+    "status": "local"
+  },
+  "Antígua e Barbuda|principal": {
+    "pais": "Antígua e Barbuda",
+    "tipo": "principal",
+    "prato": "Fungee and pepperpot",
+    "arquivo": null,
+    "erro": "sem candidatos",
+    "status": "fail"
+  },
+  "Antígua e Barbuda|sobremesa": {
+    "pais": "Antígua e Barbuda",
+    "tipo": "sobremesa",
+    "prato": "Antiguan black cake",
+    "arquivo": null,
+    "erro": "falha",
+    "status": "fail"
+  },
+  "Dominica|principal": {
+    "pais": "Dominica",
+    "tipo": "principal",
+    "prato": "Callaloo com cabra ensopada",
+    "arquivo": null,
+    "erro": "falha",
+    "status": "fail"
+  },
+  "Dominica|sobremesa": {
+    "pais": "Dominica",
+    "tipo": "sobremesa",
+    "prato": "Fresh coconut fudge",
+    "arquivo": "/img/pratos/dominica-sobremesa.jpg",
+    "status": "local"
+  },
+  "São Cristóvão e Névis|principal": {
+    "pais": "São Cristóvão e Névis",
+    "tipo": "principal",
+    "prato": "Goat water com plátanos apimentados",
+    "arquivo": "/img/pratos/sao-cristovao-e-nevis-principal.jpg",
+    "fonte": "commons",
+    "titulo": "File:The River Congo from its mouth to Bólobó; with a general description of the natural history and anthropology of its western basin (1895) (14741013316).jpg",
+    "query": "goat stew plantain",
+    "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/The_River_Congo_from_its_mouth_to_B%C3%B3lob%C3%B3%3B_with_a_general_description_of_the_natural_history_and_anthropology_of_its_western_basin_%281895%29_%2814741013316%29.jpg/960px-The_River_Congo_from_its_mouth_to_B%C3%B3lob%C3%B3%3B_with_a_general_description_of_the_natural_history_and_anthropology_of_its_western_basin_%281895%29_%2814741013316%29.jpg",
+    "bytes": 230739,
+    "status": "ok"
+  },
+  "São Cristóvão e Névis|sobremesa": {
+    "pais": "São Cristóvão e Névis",
+    "tipo": "sobremesa",
+    "prato": "Coconut sugar cake",
+    "arquivo": "/img/pratos/sao-cristovao-e-nevis-sobremesa.jpg",
+    "status": "local"
+  },
+  "Canadá|principal": {
+    "pais": "Canadá",
+    "tipo": "principal",
+    "prato": "Poutine",
+    "arquivo": "/img/pratos/canada-principal.jpg",
+    "status": "local"
+  },
+  "Canadá|sobremesa": {
+    "pais": "Canadá",
+    "tipo": "sobremesa",
+    "prato": "Butter tarts",
+    "arquivo": "/img/pratos/canada-sobremesa.jpg",
+    "status": "local"
+  },
+  "Estados Unidos|principal": {
+    "pais": "Estados Unidos",
+    "tipo": "principal",
+    "prato": "Burger artesanal com fries",
+    "arquivo": "/img/pratos/estados-unidos-principal.jpg",
+    "status": "local"
+  },
+  "Estados Unidos|sobremesa": {
+    "pais": "Estados Unidos",
+    "tipo": "sobremesa",
+    "prato": "Apple pie americana",
+    "arquivo": "/img/pratos/estados-unidos-sobremesa.jpg",
+    "status": "local"
+  },
+  "África do Sul|principal": {
+    "pais": "África do Sul",
+    "tipo": "principal",
+    "prato": "Bobotie",
+    "arquivo": "/img/pratos/africa-do-sul-principal.jpg",
+    "status": "local"
+  },
+  "África do Sul|sobremesa": {
+    "pais": "África do Sul",
+    "tipo": "sobremesa",
+    "prato": "Malva pudding",
+    "arquivo": "/img/pratos/africa-do-sul-sobremesa.jpg",
+    "status": "local"
+  },
+  "Angola|principal": {
+    "pais": "Angola",
+    "tipo": "principal",
+    "prato": "Moamba de galinha",
+    "arquivo": "/img/pratos/angola-principal.jpg",
+    "status": "local"
+  },
+  "Angola|sobremesa": {
+    "pais": "Angola",
+    "tipo": "sobremesa",
+    "prato": "Cocada angolana",
+    "arquivo": null,
+    "erro": "429",
+    "status": "fail"
+  },
+  "Argélia|principal": {
+    "pais": "Argélia",
+    "tipo": "principal",
+    "prato": "Cuscuz argelino",
+    "arquivo": null,
+    "erro": "429",
+    "status": "fail"
+  },
+  "Argélia|sobremesa": {
+    "pais": "Argélia",
+    "tipo": "sobremesa",
+    "prato": "Makroud",
+    "arquivo": "/img/pratos/argelia-sobremesa.jpg",
+    "status": "local"
+  },
+  "Benin|principal": {
+    "pais": "Benin",
+    "tipo": "principal",
+    "prato": "Pâte com sauce d’arachide",
+    "arquivo": "/img/pratos/benin-principal.jpg",
+    "status": "local"
+  },
+  "Benin|sobremesa": {
+    "pais": "Benin",
+    "tipo": "sobremesa",
+    "prato": "Amiwo doce",
+    "arquivo": null,
+    "erro": "falha",
+    "status": "fail"
+  },
+  "Botsuana|principal": {
+    "pais": "Botsuana",
+    "tipo": "principal",
+    "prato": "Seswaa",
+    "arquivo": "/img/pratos/botsuana-principal.jpg",
+    "fonte": "en.wiki",
+    "titulo": "Seswaa",
+    "query": "seswaa",
+    "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Seswaa.jpg/330px-Seswaa.jpg",
+    "bytes": 33735,
+    "status": "ok"
+  },
+  "Botsuana|sobremesa": {
+    "pais": "Botsuana",
+    "tipo": "sobremesa",
+    "prato": "Bogobe doce",
+    "arquivo": null,
+    "erro": "429",
+    "status": "fail"
+  },
+  "Burquina Faso|principal": {
+    "pais": "Burquina Faso",
+    "tipo": "principal",
+    "prato": "Tô com molho de quiabo",
+    "arquivo": "/img/pratos/burquina-faso-principal.jpg",
+    "status": "local"
+  },
+  "Burquina Faso|sobremesa": {
+    "pais": "Burquina Faso",
+    "tipo": "sobremesa",
+    "prato": "Beignets de milho",
+    "arquivo": "/img/pratos/burquina-faso-sobremesa.jpg",
+    "status": "local"
+  },
+  "Burundi|principal": {
+    "pais": "Burundi",
+    "tipo": "principal",
+    "prato": "Brochettes com ubugari",
+    "arquivo": "/img/pratos/burundi-principal.jpg",
+    "status": "local"
+  },
+  "Burundi|sobremesa": {
+    "pais": "Burundi",
+    "tipo": "sobremesa",
+    "prato": "Matoke doce",
+    "arquivo": null,
+    "erro": "falha",
+    "status": "fail"
+  },
+  "Cabo Verde|principal": {
+    "pais": "Cabo Verde",
+    "tipo": "principal",
+    "prato": "Cachupa",
+    "arquivo": "/img/pratos/cabo-verde-principal.jpg",
+    "status": "local"
+  },
+  "Cabo Verde|sobremesa": {
+    "pais": "Cabo Verde",
+    "tipo": "sobremesa",
+    "prato": "Doce de papaya",
+    "arquivo": "/img/pratos/cabo-verde-sobremesa.jpg",
+    "status": "local"
+  },
+  "Camarões|principal": {
+    "pais": "Camarões",
+    "tipo": "principal",
+    "prato": "Ndolé",
+    "arquivo": "/img/pratos/camaroes-principal.jpg",
+    "status": "local"
+  },
+  "Camarões|sobremesa": {
+    "pais": "Camarões",
+    "tipo": "sobremesa",
+    "prato": "Beignets camerounais",
+    "arquivo": "/img/pratos/camaroes-sobremesa.jpg",
+    "status": "local"
+  },
+  "Comores|principal": {
+    "pais": "Comores",
+    "tipo": "principal",
+    "prato": "Pilau com carne de cabra",
+    "arquivo": "/img/pratos/comores-principal.jpg",
+    "status": "local"
+  },
+  "Chade|principal": {
+    "pais": "Chade",
+    "tipo": "principal",
+    "prato": "Boule com molho de okra",
+    "arquivo": "/img/pratos/chade-principal.jpg",
+    "status": "local"
+  },
+  "Chade|sobremesa": {
+    "pais": "Chade",
+    "tipo": "sobremesa",
+    "prato": "Datiles com queijo fresco",
+    "arquivo": "/img/pratos/chade-sobremesa.jpg",
+    "status": "local"
+  },
+  "Comores|sobremesa": {
+    "pais": "Comores",
+    "tipo": "sobremesa",
+    "prato": "Mkatra Foutra",
+    "arquivo": "/img/pratos/comores-sobremesa.jpg",
+    "status": "local"
+  },
+  "Congo|sobremesa": {
+    "pais": "Congo",
+    "tipo": "sobremesa",
+    "prato": "Beignets de banane",
+    "arquivo": "/img/pratos/congo-sobremesa.jpg",
+    "status": "local"
+  },
+  "Congo|principal": {
+    "pais": "Congo",
+    "tipo": "principal",
+    "prato": "Poulet moambé",
+    "arquivo": "/img/pratos/congo-principal.jpg",
+    "fonte": "en.wiki",
+    "titulo": "Moambe chicken",
+    "query": "poulet moambe",
+    "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Poulet_%C3%A0_la_moambe.JPG/330px-Poulet_%C3%A0_la_moambe.JPG",
+    "bytes": 22528,
+    "status": "ok"
+  },
+  "Costa do Marfim|sobremesa": {
+    "pais": "Costa do Marfim",
+    "tipo": "sobremesa",
+    "prato": "Alloco (banana frita)",
+    "arquivo": "/img/pratos/costa-do-marfim-sobremesa.jpg",
+    "status": "local"
+  },
+  "Djibuti|sobremesa": {
+    "pais": "Djibuti",
+    "tipo": "sobremesa",
+    "prato": "Halwa djibutiense",
+    "arquivo": null,
+    "erro": "429",
+    "status": "fail"
+  },
+  "Djibuti|principal": {
+    "pais": "Djibuti",
+    "tipo": "principal",
+    "prato": "Skudahkharis",
+    "arquivo": "/img/pratos/djibuti-principal.jpg",
+    "fonte": "en.wiki",
+    "titulo": "Bariis iskukaris",
+    "query": "skudahkharis",
+    "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Somalicamelmeat.jpg/330px-Somalicamelmeat.jpg",
+    "bytes": 36740,
+    "status": "ok"
+  },
+  "Costa do Marfim|principal": {
+    "pais": "Costa do Marfim",
+    "tipo": "principal",
+    "prato": "Attiéké com poulet braisé",
+    "arquivo": null,
+    "erro": "429",
+    "status": "fail"
+  },
+  "Egito|principal": {
+    "pais": "Egito",
+    "tipo": "principal",
+    "prato": "Koshari",
+    "arquivo": "/img/pratos/egito-principal.jpg",
+    "status": "local"
+  },
+  "Egito|sobremesa": {
+    "pais": "Egito",
+    "tipo": "sobremesa",
+    "prato": "Umm Ali",
+    "arquivo": "/img/pratos/egito-sobremesa.jpg",
+    "status": "local"
+  },
+  "Eritreia|principal": {
+    "pais": "Eritreia",
+    "tipo": "principal",
+    "prato": "Zigni com injera",
+    "arquivo": "/img/pratos/eritreia-principal.jpg",
+    "status": "local"
+  },
+  "Eritreia|sobremesa": {
+    "pais": "Eritreia",
+    "tipo": "sobremesa",
+    "prato": "Himbasha doce",
+    "arquivo": null,
+    "erro": "falha",
+    "status": "fail"
+  },
+  "Essuatíni|sobremesa": {
+    "pais": "Essuatíni",
+    "tipo": "sobremesa",
+    "prato": "Emasi com mel",
+    "arquivo": "/img/pratos/essuatini-sobremesa.jpg",
+    "status": "local"
+  },
+  "Essuatíni|principal": {
+    "pais": "Essuatíni",
+    "tipo": "principal",
+    "prato": "Sishwala com carne",
+    "arquivo": null,
+    "erro": "429",
+    "status": "fail"
+  },
+  "Etiópia|principal": {
+    "pais": "Etiópia",
+    "tipo": "principal",
+    "prato": "Doro wat com injera",
+    "arquivo": "/img/pratos/etiopia-principal.jpg",
+    "status": "local"
+  },
+  "Gabão|sobremesa": {
+    "pais": "Gabão",
+    "tipo": "sobremesa",
+    "prato": "Banana frita com mel",
+    "arquivo": "/img/pratos/gabao-sobremesa.jpg",
+    "status": "local"
+  },
+  "Etiópia|sobremesa": {
+    "pais": "Etiópia",
+    "tipo": "sobremesa",
+    "prato": "Honey wine cake",
+    "arquivo": "/img/pratos/etiopia-sobremesa.jpg",
+    "status": "local"
+  },
+  "Gâmbia|sobremesa": {
+    "pais": "Gâmbia",
+    "tipo": "sobremesa",
+    "prato": "Pudding de milho",
+    "arquivo": "/img/pratos/gambia-sobremesa.jpg",
+    "status": "local"
+  },
+  "Gana|principal": {
+    "pais": "Gana",
+    "tipo": "principal",
+    "prato": "Jollof rice ganês",
+    "arquivo": "/img/pratos/gana-principal.jpg",
+    "status": "local"
+  },
+  "Gâmbia|principal": {
+    "pais": "Gâmbia",
+    "tipo": "principal",
+    "prato": "Domoda",
+    "arquivo": "/img/pratos/gambia-principal.jpg",
+    "status": "local"
+  },
+  "Gana|sobremesa": {
+    "pais": "Gana",
+    "tipo": "sobremesa",
+    "prato": "Bofrot",
+    "arquivo": null,
+    "erro": "falha",
+    "status": "fail"
+  },
+  "Guiné|sobremesa": {
+    "pais": "Guiné",
+    "tipo": "sobremesa",
+    "prato": "Beignets de milho",
+    "arquivo": "/img/pratos/guine-sobremesa.jpg",
+    "status": "local"
+  },
+  "Guiné-Bissau|principal": {
+    "pais": "Guiné-Bissau",
+    "tipo": "principal",
+    "prato": "Caldo de mancarra",
+    "arquivo": "/img/pratos/guine-bissau-principal.jpg",
+    "status": "local"
+  },
+  "Guiné|principal": {
+    "pais": "Guiné",
+    "tipo": "principal",
+    "prato": "Sauce arachide com riz",
+    "arquivo": "/img/pratos/guine-principal.jpg",
+    "fonte": "commons",
+    "titulo": "File:Poulet sauce arachide - Chicken on peanut sauce.jpg",
+    "query": "sauce arachide",
+    "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Poulet_sauce_arachide_-_Chicken_on_peanut_sauce.jpg",
+    "bytes": 135108,
+    "status": "ok"
+  },
+  "Gabão|principal": {
+    "pais": "Gabão",
+    "tipo": "principal",
+    "prato": "Nyembwe chicken",
+    "arquivo": null,
+    "erro": "429",
+    "status": "fail"
+  },
+  "Guiné Equatorial|sobremesa": {
+    "pais": "Guiné Equatorial",
+    "tipo": "sobremesa",
+    "prato": "Doce de coco local",
+    "arquivo": "/img/pratos/guine-equatorial-sobremesa.jpg",
+    "status": "local"
+  },
+  "Guiné Equatorial|principal": {
+    "pais": "Guiné Equatorial",
+    "tipo": "principal",
+    "prato": "Succotash de banana-pão",
+    "arquivo": "/img/pratos/guine-equatorial-principal.jpg",
+    "status": "local"
+  },
+  "Lesoto|principal": {
+    "pais": "Lesoto",
+    "tipo": "principal",
+    "prato": "Papa com moroho",
+    "arquivo": "/img/pratos/lesoto-principal.jpg",
+    "status": "local"
+  },
+  "Guiné-Bissau|sobremesa": {
+    "pais": "Guiné-Bissau",
+    "tipo": "sobremesa",
+    "prato": "Cocada bissau-guineense",
+    "arquivo": null,
+    "erro": "429",
+    "status": "fail"
+  },
+  "Lesoto|sobremesa": {
+    "pais": "Lesoto",
+    "tipo": "sobremesa",
+    "prato": "Likhobe doce",
+    "arquivo": null,
+    "erro": "falha",
+    "status": "fail"
+  },
+  "Libéria|principal": {
+    "pais": "Libéria",
+    "tipo": "principal",
+    "prato": "Jollof liberiano",
+    "arquivo": null,
+    "erro": "falha",
+    "status": "fail"
+  },
+  "Líbia|sobremesa": {
+    "pais": "Líbia",
+    "tipo": "sobremesa",
+    "prato": "Basbousa",
+    "arquivo": "/img/pratos/libia-sobremesa.jpg",
+    "status": "local"
+  },
+  "Libéria|sobremesa": {
+    "pais": "Libéria",
+    "tipo": "sobremesa",
+    "prato": "Kanyah",
+    "arquivo": null,
+    "erro": "429",
+    "status": "fail"
+  },
+  "Madagascar|principal": {
+    "pais": "Madagascar",
+    "tipo": "principal",
+    "prato": "Romazava",
+    "arquivo": "/img/pratos/madagascar-principal.jpg",
+    "fonte": "en.wiki",
+    "titulo": "Romazava",
+    "query": "romazava",
+    "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Madagaskar_stew_2019-10-01.jpg/330px-Madagaskar_stew_2019-10-01.jpg",
+    "bytes": 50416,
+    "status": "ok"
+  },
+  "Líbia|principal": {
+    "pais": "Líbia",
+    "tipo": "principal",
+    "prato": "Imbakbaka",
+    "arquivo": null,
+    "erro": "429",
+    "status": "fail"
+  },
+  "Malawi|principal": {
+    "pais": "Malawi",
+    "tipo": "principal",
+    "prato": "Nsima com nyama ya mbuzi",
+    "arquivo": null,
+    "erro": "429",
+    "status": "fail"
+  },
+  "Madagascar|sobremesa": {
+    "pais": "Madagascar",
+    "tipo": "sobremesa",
+    "prato": "Koba",
+    "arquivo": "/img/pratos/madagascar-sobremesa.jpg",
+    "status": "local"
+  },
+  "Malawi|sobremesa": {
+    "pais": "Malawi",
+    "tipo": "sobremesa",
+    "prato": "Mandazi",
+    "arquivo": "/img/pratos/malawi-sobremesa.jpg",
+    "status": "local"
+  },
+  "Marrocos|principal": {
+    "pais": "Marrocos",
+    "tipo": "principal",
+    "prato": "Tagine de cordeiro",
+    "arquivo": "/img/pratos/marrocos-principal.jpg",
+    "status": "local"
+  },
+  "Mali|sobremesa": {
+    "pais": "Mali",
+    "tipo": "sobremesa",
+    "prato": "Dégué",
+    "arquivo": "/img/pratos/mali-sobremesa.jpg",
+    "status": "local"
+  },
+  "Marrocos|sobremesa": {
+    "pais": "Marrocos",
+    "tipo": "sobremesa",
+    "prato": "Pastilla doce / chebakia",
+    "arquivo": null,
+    "erro": "falha",
+    "status": "fail"
+  },
+  "Maurícia|sobremesa": {
+    "pais": "Maurícia",
+    "tipo": "sobremesa",
+    "prato": "Napolitaine",
+    "arquivo": "/img/pratos/mauricia-sobremesa.jpg",
+    "status": "local"
+  },
+  "Maurícia|principal": {
+    "pais": "Maurícia",
+    "tipo": "principal",
+    "prato": "Dholl puri",
+    "arquivo": "/img/pratos/mauricia-principal.jpg",
+    "fonte": "commons",
+    "titulo": "File:Vendeur de Dholl Puri.JPG",
+    "query": "dholl puri",
+    "urlOriginal": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Vendeur_de_Dholl_Puri.JPG/960px-Vendeur_de_Dholl_Puri.JPG",
+    "bytes": 180429,
+    "status": "ok"
+  },
+  "Mauritânia|sobremesa": {
+    "pais": "Mauritânia",
+    "tipo": "sobremesa",
+    "prato": "Datiles com leite",
+    "arquivo": "/img/pratos/mauritania-sobremesa.jpg",
+    "status": "local"
+  },
+  "Mali|principal": {
+    "pais": "Mali",
+    "tipo": "principal",
+    "prato": "Tiguadege na",
+    "arquivo": null,
+    "erro": "429",
+    "status": "fail"
+  },
+  "Moçambique|principal": {
+    "pais": "Moçambique",
+    "tipo": "principal",
+    "prato": "Matapa de amendoim",
+    "arquivo": null,
+    "erro": "DL 429",
+    "status": "fail"
+  },
+  "Moçambique|sobremesa": {
+    "pais": "Moçambique",
+    "tipo": "sobremesa",
+    "prato": "Bolo polana",
+    "arquivo": "/img/pratos/mocambique-sobremesa.jpg",
+    "status": "local"
+  },
+  "Namíbia|principal": {
+    "pais": "Namíbia",
+    "tipo": "principal",
+    "prato": "Kapana com pap",
+    "arquivo": "/img/pratos/namibia-principal.jpg",
+    "status": "local"
+  },
+  "Mauritânia|principal": {
+    "pais": "Mauritânia",
+    "tipo": "principal",
+    "prato": "Méchoi",
+    "arquivo": null,
+    "erro": "429",
+    "status": "fail"
+  },
+  "Níger|principal": {
+    "pais": "Níger",
+    "tipo": "principal",
+    "prato": "Dambou",
+    "arquivo": null,
+    "erro": "DL 429",
+    "status": "fail"
+  },
+  "Nigéria|principal": {
+    "pais": "Nigéria",
+    "tipo": "principal",
+    "prato": "Jollof rice nigeriano",
+    "arquivo": "/img/pratos/nigeria-principal.jpg",
+    "status": "local"
+  },
+  "Nigéria|sobremesa": {
+    "pais": "Nigéria",
+    "tipo": "sobremesa",
+    "prato": "Puff-puff",
+    "arquivo": "/img/pratos/nigeria-sobremesa.jpg",
+    "status": "local"
+  },
+  "Namíbia|sobremesa": {
+    "pais": "Namíbia",
+    "tipo": "sobremesa",
+    "prato": "Milchschnitte local",
+    "arquivo": null,
+    "erro": "sem candidatos",
+    "status": "fail"
+  },
+  "Níger|sobremesa": {
+    "pais": "Níger",
+    "tipo": "sobremesa",
+    "prato": "Fari masa",
+    "arquivo": null,
+    "erro": "sem candidatos",
+    "status": "fail"
+  },
+  "Quênia|principal": {
+    "pais": "Quênia",
+    "tipo": "principal",
+    "prato": "Ugali com nyama choma",
+    "arquivo": "/img/pratos/quenia-principal.jpg",
+    "status": "local"
+  },
+  "República Centro-Africana|sobremesa": {
+    "pais": "República Centro-Africana",
+    "tipo": "sobremesa",
+    "prato": "Beignets de mandioca",
+    "arquivo": "/img/pratos/republica-centro-africana-sobremesa.jpg",
+    "status": "local"
+  },
+  "República Centro-Africana|principal": {
+    "pais": "República Centro-Africana",
+    "tipo": "principal",
+    "prato": "Gozo com molho de amendoim",
+    "arquivo": "/img/pratos/republica-centro-africana-principal.jpg",
+    "status": "local"
+  },
+  "Quênia|sobremesa": {
+    "pais": "Quênia",
+    "tipo": "sobremesa",
+    "prato": "Mandazi quenianos",
+    "arquivo": null,
+    "erro": "sem candidatos",
+    "status": "fail"
+  },
+  "Ruanda|principal": {
+    "pais": "Ruanda",
+    "tipo": "principal",
+    "prato": "Brochettes com ugali",
+    "arquivo": "/img/pratos/ruanda-principal.jpg",
+    "status": "local"
+  },
+  "República Democrática do Congo|principal": {
+    "pais": "República Democrática do Congo",
+    "tipo": "principal",
+    "prato": "Poulet à la moambe",
+    "arquivo": "/img/pratos/republica-democratica-do-congo-principal.jpg",
+    "status": "local"
+  },
+  "Ruanda|sobremesa": {
+    "pais": "Ruanda",
+    "tipo": "sobremesa",
+    "prato": "Sweet potatoes com mel",
+    "arquivo": "/img/pratos/ruanda-sobremesa.jpg",
+    "status": "local"
+  },
+  "República Democrática do Congo|sobremesa": {
+    "pais": "República Democrática do Congo",
+    "tipo": "sobremesa",
+    "prato": "Chikwangue doce",
+    "arquivo": null,
+    "erro": "sem candidatos",
+    "status": "fail"
+  },
+  "São Tomé e Príncipe|sobremesa": {
+    "pais": "São Tomé e Príncipe",
+    "tipo": "sobremesa",
+    "prato": "Chocolate de cacau local",
+    "arquivo": "/img/pratos/sao-tome-e-principe-sobremesa.jpg",
+    "status": "local"
+  },
+  "Senegal|principal": {
+    "pais": "Senegal",
+    "tipo": "principal",
+    "prato": "Yassa poulet",
+    "arquivo": "/img/pratos/senegal-principal.jpg",
+    "status": "local"
+  },
+  "Senegal|sobremesa": {
+    "pais": "Senegal",
+    "tipo": "sobremesa",
+    "prato": "Thiéré doce",
+    "arquivo": "/img/pratos/senegal-sobremesa.jpg",
+    "status": "local"
+  },
+  "Seicheles|principal": {
+    "pais": "Seicheles",
+    "tipo": "principal",
+    "prato": "Caril crioulo de frango",
+    "arquivo": "/img/pratos/seicheles-principal.jpg",
+    "status": "local"
+  },
+  "São Tomé e Príncipe|principal": {
+    "pais": "São Tomé e Príncipe",
+    "tipo": "principal",
+    "prato": "Calulu santomense",
+    "arquivo": null,
+    "erro": "sem candidatos",
+    "status": "fail"
+  },
+  "Seicheles|sobremesa": {
+    "pais": "Seicheles",
+    "tipo": "sobremesa",
+    "prato": "Ladob",
+    "arquivo": "/img/pratos/seicheles-sobremesa.jpg",
+    "status": "local"
+  },
+  "Serra Leoa|sobremesa": {
+    "pais": "Serra Leoa",
+    "tipo": "sobremesa",
+    "prato": "Sweet potato pone",
+    "arquivo": "/img/pratos/serra-leoa-sobremesa.jpg",
+    "status": "local"
+  },
+  "Somália|sobremesa": {
+    "pais": "Somália",
+    "tipo": "sobremesa",
+    "prato": "Xalwo",
+    "arquivo": "/img/pratos/somalia-sobremesa.jpg",
+    "status": "local"
+  },
+  "Serra Leoa|principal": {
+    "pais": "Serra Leoa",
+    "tipo": "principal",
+    "prato": "Groundnut stew",
+    "arquivo": null,
+    "erro": "DL 429",
+    "status": "fail"
+  },
+  "Sudão|principal": {
+    "pais": "Sudão",
+    "tipo": "principal",
+    "prato": "Ful medames sudanês",
+    "arquivo": "/img/pratos/sudao-principal.jpg",
+    "status": "local"
+  },
+  "Sudão do Sul|principal": {
+    "pais": "Sudão do Sul",
+    "tipo": "principal",
+    "prato": "Kisra com ensopado",
+    "arquivo": null,
+    "erro": "DL 429",
+    "status": "fail"
+  },
+  "Somália|principal": {
+    "pais": "Somália",
+    "tipo": "principal",
+    "prato": "Bariis iskukaris",
+    "arquivo": null,
+    "erro": "sem candidatos",
+    "status": "fail"
+  },
+  "Sudão do Sul|sobremesa": {
+    "pais": "Sudão do Sul",
+    "tipo": "sobremesa",
+    "prato": "Asida doce",
+    "arquivo": null,
+    "erro": "DL 429",
+    "status": "fail"
+  },
+  "Tanzânia|principal": {
+    "pais": "Tanzânia",
+    "tipo": "principal",
+    "prato": "Ugali com mchuzi",
+    "arquivo": "/img/pratos/tanzania-principal.jpg",
+    "status": "local"
+  },
+  "Sudão|sobremesa": {
+    "pais": "Sudão",
+    "tipo": "sobremesa",
+    "prato": "Basbousa sudanesa",
+    "arquivo": null,
+    "erro": "sem candidatos",
+    "status": "fail"
+  },
+  "Tanzânia|sobremesa": {
+    "pais": "Tanzânia",
+    "tipo": "sobremesa",
+    "prato": "Vitumbua",
+    "arquivo": null,
+    "erro": "DL 429",
+    "status": "fail"
+  },
+  "Togo|principal": {
+    "pais": "Togo",
+    "tipo": "principal",
+    "prato": "Fufu com sauce arachide",
+    "arquivo": "/img/pratos/togo-principal.jpg",
+    "status": "local"
+  },
+  "Togo|sobremesa": {
+    "pais": "Togo",
+    "tipo": "sobremesa",
+    "prato": "Akume doce",
+    "arquivo": null,
+    "erro": "sem candidatos",
+    "status": "fail"
+  },
+  "Tunísia|principal": {
+    "pais": "Tunísia",
+    "tipo": "principal",
+    "prato": "Couscous tunisino",
+    "arquivo": null,
+    "erro": "sem candidatos",
+    "status": "fail"
+  },
+  "Uganda|principal": {
+    "pais": "Uganda",
+    "tipo": "principal",
+    "prato": "Matoke com groundnut sauce",
+    "arquivo": "/img/pratos/uganda-principal.jpg",
+    "status": "local"
+  },
+  "Tunísia|sobremesa": {
+    "pais": "Tunísia",
+    "tipo": "sobremesa",
+    "prato": "Baklava / makroud tunisino",
+    "arquivo": null,
+    "erro": "sem candidatos",
+    "status": "fail"
+  },
+  "Zâmbia|principal": {
+    "pais": "Zâmbia",
+    "tipo": "principal",
+    "prato": "Nshima com ifisashi",
+    "arquivo": "/img/pratos/zambia-principal.jpg",
+    "status": "local"
+  },
+  "Zimbábue|principal": {
+    "pais": "Zimbábue",
+    "tipo": "principal",
+    "prato": "Sadza com stew",
+    "arquivo": "/img/pratos/zimbabue-principal.jpg",
+    "status": "local"
+  },
+  "Uganda|sobremesa": {
+    "pais": "Uganda",
+    "tipo": "sobremesa",
+    "prato": "Mandazi ugandenses",
+    "arquivo": null,
+    "erro": "sem candidatos",
+    "status": "fail"
+  },
+  "Zâmbia|sobremesa": {
+    "pais": "Zâmbia",
+    "tipo": "sobremesa",
+    "prato": "Fritters doces",
+    "arquivo": null,
+    "erro": "sem candidatos",
+    "status": "fail"
+  },
+  "Afeganistão|sobremesa": {
+    "pais": "Afeganistão",
+    "tipo": "sobremesa",
+    "prato": "Firni",
+    "arquivo": "/img/pratos/afeganistao-sobremesa.jpg",
+    "status": "local"
+  },
+  "Afeganistão|principal": {
+    "pais": "Afeganistão",
+    "tipo": "principal",
+    "prato": "Kabuli pulao",
+    "arquivo": null,
+    "erro": "DL 429",
+    "status": "fail"
+  },
+  "Zimbábue|sobremesa": {
+    "pais": "Zimbábue",
+    "tipo": "sobremesa",
+    "prato": "Maheu adoçado",
+    "arquivo": null,
+    "erro": "sem candidatos",
+    "status": "fail"
+  },
+  "Armênia|principal": {
+    "pais": "Armênia",
+    "tipo": "principal",
+    "prato": "Harissa armênia",
+    "arquivo": null,
+    "erro": "DL 429",
+    "status": "fail"
+  },
+  "Armênia|sobremesa": {
+    "pais": "Armênia",
+    "tipo": "sobremesa",
+    "prato": "Gata",
+    "arquivo": "/img/pratos/armenia-sobremesa.jpg",
+    "status": "local"
+  },
+  "Bangladesh|principal": {
+    "pais": "Bangladesh",
+    "tipo": "principal",
+    "prato": "Kacchi biryani",
+    "arquivo": "/img/pratos/bangladesh-principal.jpg",
+    "status": "local"
+  },
+  "Azerbaijão|sobremesa": {
+    "pais": "Azerbaijão",
+    "tipo": "sobremesa",
+    "prato": "Pakhlava",
+    "arquivo": null,
+    "erro": "DL 429",
+    "status": "fail"
+  },
+  "Azerbaijão|principal": {
+    "pais": "Azerbaijão",
+    "tipo": "principal",
+    "prato": "Plov azerbaijano",
+    "arquivo": null,
+    "erro": "sem candidatos",
+    "status": "fail"
+  },
+  "Bangladesh|sobremesa": {
+    "pais": "Bangladesh",
+    "tipo": "sobremesa",
+    "prato": "Mishti doi",
+    "arquivo": "/img/pratos/bangladesh-sobremesa.jpg",
+    "status": "local"
+  },
+  "Bhutan|principal": {
+    "pais": "Bhutan",
+    "tipo": "principal",
+    "prato": "Ema datshi",
+    "arquivo": null,
+    "erro": "DL 429",
+    "status": "fail"
+  },
+  "Bhutan|sobremesa": {
+    "pais": "Bhutan",
+    "tipo": "sobremesa",
+    "prato": "Suja com arroz doce",
+    "arquivo": "/img/pratos/bhutan-sobremesa.jpg",
+    "status": "local"
+  },
+  "Brunei|sobremesa": {
+    "pais": "Brunei",
+    "tipo": "sobremesa",
+    "prato": "Kuih",
+    "arquivo": "/img/pratos/brunei-sobremesa.jpg",
+    "status": "local"
+  },
+  "Brunei|principal": {
+    "pais": "Brunei",
+    "tipo": "principal",
+    "prato": "Ambuyat",
+    "arquivo": "/img/pratos/brunei-principal.jpg",
+    "status": "local"
+  },
+  "Camboja|principal": {
+    "pais": "Camboja",
+    "tipo": "principal",
+    "prato": "Amok de frango",
+    "arquivo": "/img/pratos/camboja-principal.jpg",
+    "status": "local"
+  },
+  "Cazaquistão|principal": {
+    "pais": "Cazaquistão",
+    "tipo": "principal",
+    "prato": "Beshbarmak",
+    "arquivo": "/img/pratos/cazaquistao-principal.jpg",
+    "status": "local"
+  },
+  "Camboja|sobremesa": {
+    "pais": "Camboja",
+    "tipo": "sobremesa",
+    "prato": "Num ansom",
+    "arquivo": "/img/pratos/camboja-sobremesa.jpg",
+    "status": "local"
+  },
+  "Cazaquistão|sobremesa": {
+    "pais": "Cazaquistão",
+    "tipo": "sobremesa",
+    "prato": "Baursak com mel",
+    "arquivo": null,
+    "erro": "DL 429",
+    "status": "fail"
+  },
+  "China|principal": {
+    "pais": "China",
+    "tipo": "principal",
+    "prato": "Pato laqueado de Pequim",
+    "arquivo": "/img/pratos/china-principal.jpg",
+    "status": "local"
+  },
+  "Coreia do Norte|principal": {
+    "pais": "Coreia do Norte",
+    "tipo": "principal",
+    "prato": "Naengmyeon",
+    "arquivo": "/img/pratos/coreia-do-norte-principal.jpg",
+    "status": "local"
+  },
+  "China|sobremesa": {
+    "pais": "China",
+    "tipo": "sobremesa",
+    "prato": "Tangyuan / doce de feijão vermelho",
+    "arquivo": null,
+    "erro": "sem candidatos",
+    "status": "fail"
+  },
+  "Coreia do Sul|principal": {
+    "pais": "Coreia do Sul",
+    "tipo": "principal",
+    "prato": "Bibimbap",
+    "arquivo": "/img/pratos/coreia-do-sul-principal.jpg",
+    "status": "local"
+  },
+  "Coreia do Norte|sobremesa": {
+    "pais": "Coreia do Norte",
+    "tipo": "sobremesa",
+    "prato": "Injeolmi",
+    "arquivo": "/img/pratos/coreia-do-norte-sobremesa.jpg",
+    "status": "local"
+  },
+  "Coreia do Sul|sobremesa": {
+    "pais": "Coreia do Sul",
+    "tipo": "sobremesa",
+    "prato": "Hotteok",
+    "arquivo": "/img/pratos/coreia-do-sul-sobremesa.jpg",
+    "status": "local"
+  },
+  "Filipinas|sobremesa": {
+    "pais": "Filipinas",
+    "tipo": "sobremesa",
+    "prato": "Halo-halo",
+    "arquivo": "/img/pratos/filipinas-sobremesa.jpg",
+    "status": "local"
+  },
+  "Filipinas|principal": {
+    "pais": "Filipinas",
+    "tipo": "principal",
+    "prato": "Adobo filipino",
+    "arquivo": null,
+    "erro": "DL 429",
+    "status": "fail"
+  },
+  "Geórgia|principal": {
+    "pais": "Geórgia",
+    "tipo": "principal",
+    "prato": "Khinkali",
+    "arquivo": "/img/pratos/georgia-principal.jpg",
+    "status": "local"
+  },
+  "Índia|principal": {
+    "pais": "Índia",
+    "tipo": "principal",
+    "prato": "Butter chicken",
+    "arquivo": "/img/pratos/india-principal.jpg",
+    "status": "local"
+  },
+  "Geórgia|sobremesa": {
+    "pais": "Geórgia",
+    "tipo": "sobremesa",
+    "prato": "Churchkhela",
+    "arquivo": "/img/pratos/georgia-sobremesa.jpg",
+    "status": "local"
+  },
+  "Indonésia|principal": {
+    "pais": "Indonésia",
+    "tipo": "principal",
+    "prato": "Nasi goreng",
+    "arquivo": "/img/pratos/indonesia-principal.jpg",
+    "status": "local"
+  },
+  "Índia|sobremesa": {
+    "pais": "Índia",
+    "tipo": "sobremesa",
+    "prato": "Gulab jamun",
+    "arquivo": "/img/pratos/india-sobremesa.jpg",
+    "status": "local"
+  },
+  "Japão|sobremesa": {
+    "pais": "Japão",
+    "tipo": "sobremesa",
+    "prato": "Mochi com anko",
+    "arquivo": "/img/pratos/japao-sobremesa.jpg",
+    "status": "local"
+  },
+  "Japão|principal": {
+    "pais": "Japão",
+    "tipo": "principal",
+    "prato": "Ramen / curry japonês",
+    "arquivo": "/img/pratos/japao-principal.jpg",
+    "status": "local"
+  },
+  "Indonésia|sobremesa": {
+    "pais": "Indonésia",
+    "tipo": "sobremesa",
+    "prato": "Dadar gulung",
+    "arquivo": "/img/pratos/indonesia-sobremesa.jpg",
+    "status": "local"
+  },
+  "Quirguistão|sobremesa": {
+    "pais": "Quirguistão",
+    "tipo": "sobremesa",
+    "prato": "Boorsok com mel",
+    "arquivo": null,
+    "erro": "DL 429",
+    "status": "fail"
+  },
+  "Quirguistão|principal": {
+    "pais": "Quirguistão",
+    "tipo": "principal",
+    "prato": "Beshbarmak quirguiz",
+    "arquivo": null,
+    "erro": "sem candidatos",
+    "status": "fail"
+  },
+  "Laos|principal": {
+    "pais": "Laos",
+    "tipo": "principal",
+    "prato": "Laab com sticky rice",
+    "arquivo": "/img/pratos/laos-principal.jpg",
+    "status": "local"
+  },
+  "Laos|sobremesa": {
+    "pais": "Laos",
+    "tipo": "sobremesa",
+    "prato": "Khao nom kok",
+    "arquivo": "/img/pratos/laos-sobremesa.jpg",
+    "status": "local"
+  },
+  "Malásia|principal": {
+    "pais": "Malásia",
+    "tipo": "principal",
+    "prato": "Nasi lemak",
+    "arquivo": "/img/pratos/malasia-principal.jpg",
+    "status": "local"
+  },
+  "Maldivas|principal": {
+    "pais": "Maldivas",
+    "tipo": "principal",
+    "prato": "Roshi com mas riha de frango",
+    "arquivo": "/img/pratos/maldivas-principal.jpg",
+    "status": "local"
+  },
+  "Malásia|sobremesa": {
+    "pais": "Malásia",
+    "tipo": "sobremesa",
+    "prato": "Cendol",
+    "arquivo": "/img/pratos/malasia-sobremesa.jpg",
+    "status": "local"
+  },
+  "Maldivas|sobremesa": {
+    "pais": "Maldivas",
+    "tipo": "sobremesa",
+    "prato": "Bondi doce de coco",
+    "arquivo": "/img/pratos/maldivas-sobremesa.jpg",
+    "status": "local"
+  },
+  "Myanmar|principal": {
+    "pais": "Myanmar",
+    "tipo": "principal",
+    "prato": "Ohn no khao swè",
+    "arquivo": "/img/pratos/myanmar-principal.jpg",
+    "status": "local"
+  },
+  "Mongólia|principal": {
+    "pais": "Mongólia",
+    "tipo": "principal",
+    "prato": "Buuz",
+    "arquivo": "/img/pratos/mongolia-principal.jpg",
+    "status": "local"
+  },
+  "Mongólia|sobremesa": {
+    "pais": "Mongólia",
+    "tipo": "sobremesa",
+    "prato": "Aaruul",
+    "arquivo": null,
+    "erro": "DL 429",
+    "status": "fail"
+  },
+  "Myanmar|sobremesa": {
+    "pais": "Myanmar",
+    "tipo": "sobremesa",
+    "prato": "Mont let saung",
+    "arquivo": "/img/pratos/myanmar-sobremesa.jpg",
+    "status": "local"
+  },
+  "Nepal|principal": {
+    "pais": "Nepal",
+    "tipo": "principal",
+    "prato": "Dal bhat",
+    "arquivo": "/img/pratos/nepal-principal.jpg",
+    "status": "local"
+  },
+  "Nepal|sobremesa": {
+    "pais": "Nepal",
+    "tipo": "sobremesa",
+    "prato": "Sel roti",
+    "arquivo": "/img/pratos/nepal-sobremesa.jpg",
+    "status": "local"
+  },
+  "Paquistão|sobremesa": {
+    "pais": "Paquistão",
+    "tipo": "sobremesa",
+    "prato": "Gulab jamun paquistanês",
+    "arquivo": "/img/pratos/paquistao-sobremesa.jpg",
+    "status": "local"
+  },
+  "Singapura|principal": {
+    "pais": "Singapura",
+    "tipo": "principal",
+    "prato": "Hainanese chicken rice",
+    "arquivo": "/img/pratos/singapura-principal.jpg",
+    "status": "local"
+  },
+  "Singapura|sobremesa": {
+    "pais": "Singapura",
+    "tipo": "sobremesa",
+    "prato": "Ice kacang",
+    "arquivo": "/img/pratos/singapura-sobremesa.jpg",
+    "status": "local"
+  },
+  "Sri Lanka|principal": {
+    "pais": "Sri Lanka",
+    "tipo": "principal",
+    "prato": "Rice and curry cingalês",
+    "arquivo": "/img/pratos/sri-lanka-principal.jpg",
+    "status": "local"
+  },
+  "Paquistão|principal": {
+    "pais": "Paquistão",
+    "tipo": "principal",
+    "prato": "Nihari",
+    "arquivo": null,
+    "erro": "DL 429",
+    "status": "fail"
+  },
+  "Tajiquistão|principal": {
+    "pais": "Tajiquistão",
+    "tipo": "principal",
+    "prato": "Qurutob",
+    "arquivo": null,
+    "erro": "DL 429",
+    "status": "fail"
+  },
+  "Sri Lanka|sobremesa": {
+    "pais": "Sri Lanka",
+    "tipo": "sobremesa",
+    "prato": "Watalappan",
+    "arquivo": "/img/pratos/sri-lanka-sobremesa.jpg",
+    "status": "local"
+  },
+  "Tailândia|principal": {
+    "pais": "Tailândia",
+    "tipo": "principal",
+    "prato": "Pad Thai",
+    "arquivo": "/img/pratos/tailandia-principal.jpg",
+    "status": "local"
+  },
+  "Tailândia|sobremesa": {
+    "pais": "Tailândia",
+    "tipo": "sobremesa",
+    "prato": "Mango sticky rice",
+    "arquivo": "/img/pratos/tailandia-sobremesa.jpg",
+    "status": "local"
+  },
+  "Timor-Leste|principal": {
+    "pais": "Timor-Leste",
+    "tipo": "principal",
+    "prato": "Batar da'an",
+    "arquivo": "/img/pratos/timor-leste-principal.jpg",
+    "status": "local"
+  },
+  "Timor-Leste|sobremesa": {
+    "pais": "Timor-Leste",
+    "tipo": "sobremesa",
+    "prato": "Bolo de milho timorense",
+    "arquivo": "/img/pratos/timor-leste-sobremesa.jpg",
+    "status": "local"
+  },
+  "Tajiquistão|sobremesa": {
+    "pais": "Tajiquistão",
+    "tipo": "sobremesa",
+    "prato": "Halwa tajique",
+    "arquivo": null,
+    "erro": "sem candidatos",
+    "status": "fail"
+  },
+  "Turcomenistão|sobremesa": {
+    "pais": "Turcomenistão",
+    "tipo": "sobremesa",
+    "prato": "Chuck-chuck",
+    "arquivo": "/img/pratos/turcomenistao-sobremesa.jpg",
+    "status": "local"
+  },
+  "Turcomenistão|principal": {
+    "pais": "Turcomenistão",
+    "tipo": "principal",
+    "prato": "Palaw turcomeno",
+    "arquivo": null,
+    "erro": "sem candidatos",
+    "status": "fail"
+  },
+  "Uzbequistão|principal": {
+    "pais": "Uzbequistão",
+    "tipo": "principal",
+    "prato": "Plov uzbeque",
+    "arquivo": null,
+    "erro": "sem candidatos",
+    "status": "fail"
+  },
+  "Vietnã|principal": {
+    "pais": "Vietnã",
+    "tipo": "principal",
+    "prato": "Phở",
+    "arquivo": "/img/pratos/vietna-principal.jpg",
+    "status": "local"
+  },
+  "Uzbequistão|sobremesa": {
+    "pais": "Uzbequistão",
+    "tipo": "sobremesa",
+    "prato": "Navat / halva",
+    "arquivo": null,
+    "erro": "sem candidatos",
+    "status": "fail"
+  },
+  "Vietnã|sobremesa": {
+    "pais": "Vietnã",
+    "tipo": "sobremesa",
+    "prato": "Chè",
+    "arquivo": null,
+    "erro": "DL 429",
+    "status": "fail"
+  },
+  "Taiwan|principal": {
+    "pais": "Taiwan",
+    "tipo": "principal",
+    "prato": "Beef noodle soup",
+    "arquivo": "/img/pratos/taiwan-principal.jpg",
+    "status": "local"
+  },
+  "Taiwan|sobremesa": {
+    "pais": "Taiwan",
+    "tipo": "sobremesa",
+    "prato": "Mochi / taro balls",
+    "arquivo": "/img/pratos/taiwan-sobremesa.jpg",
+    "status": "local"
+  },
+  "Arábia Saudita|principal": {
+    "pais": "Arábia Saudita",
+    "tipo": "principal",
+    "prato": "Kabsa",
+    "arquivo": "/img/pratos/arabia-saudita-principal.jpg",
+    "status": "local"
+  },
+  "Bahrein|principal": {
+    "pais": "Bahrein",
+    "tipo": "principal",
+    "prato": "Machboos",
+    "arquivo": "/img/pratos/bahrein-principal.jpg",
+    "status": "local"
+  },
+  "Arábia Saudita|sobremesa": {
+    "pais": "Arábia Saudita",
+    "tipo": "sobremesa",
+    "prato": "Rangeena / basbousa",
+    "arquivo": null,
+    "erro": "sem candidatos",
+    "status": "fail"
+  },
+  "Bahrein|sobremesa": {
+    "pais": "Bahrein",
+    "tipo": "sobremesa",
+    "prato": "Halwa bahraini",
+    "arquivo": null,
+    "erro": "DL 429",
+    "status": "fail"
+  },
+  "Emirados Árabes Unidos|sobremesa": {
+    "pais": "Emirados Árabes Unidos",
+    "tipo": "sobremesa",
+    "prato": "Luqaimat",
+    "arquivo": "/img/pratos/emirados-arabes-unidos-sobremesa.jpg",
+    "status": "local"
+  },
+  "Emirados Árabes Unidos|principal": {
+    "pais": "Emirados Árabes Unidos",
+    "tipo": "principal",
+    "prato": "Machboos emiráti",
+    "arquivo": null,
+    "erro": "sem candidatos",
+    "status": "fail"
+  },
+  "Iêmen|principal": {
+    "pais": "Iêmen",
+    "tipo": "principal",
+    "prato": "Saltah",
+    "arquivo": null,
+    "erro": "DL 429",
+    "status": "fail"
+  },
+  "Iêmen|sobremesa": {
+    "pais": "Iêmen",
+    "tipo": "sobremesa",
+    "prato": "Bint al-sahn",
+    "arquivo": null,
+    "erro": "DL 429",
+    "status": "fail"
+  },
+  "Iraque|principal": {
+    "pais": "Iraque",
+    "tipo": "principal",
+    "prato": "Quzi de cordeiro",
+    "arquivo": "/img/pratos/iraque-principal.jpg",
+    "status": "local"
+  },
+  "Iraque|sobremesa": {
+    "pais": "Iraque",
+    "tipo": "sobremesa",
+    "prato": "Kleicha",
+    "arquivo": "/img/pratos/iraque-sobremesa.jpg",
+    "status": "local"
+  },
+  "Irã|principal": {
+    "pais": "Irã",
+    "tipo": "principal",
+    "prato": "Chelo kebab",
+    "arquivo": "/img/pratos/ira-principal.jpg",
+    "status": "local"
+  },
+  "Israel|principal": {
+    "pais": "Israel",
+    "tipo": "principal",
+    "prato": "Shakshuka",
+    "arquivo": "/img/pratos/israel-principal.jpg",
+    "status": "local"
+  },
+  "Irã|sobremesa": {
+    "pais": "Irã",
+    "tipo": "sobremesa",
+    "prato": "Bastani / sholeh zard",
+    "arquivo": null,
+    "erro": "sem candidatos",
+    "status": "fail"
+  },
+  "Jordânia|sobremesa": {
+    "pais": "Jordânia",
+    "tipo": "sobremesa",
+    "prato": "Knafeh",
+    "arquivo": "/img/pratos/jordania-sobremesa.jpg",
+    "status": "local"
+  },
+  "Jordânia|principal": {
+    "pais": "Jordânia",
+    "tipo": "principal",
+    "prato": "Mansaf",
+    "arquivo": null,
+    "erro": "DL 429",
+    "status": "fail"
+  },
+  "Israel|sobremesa": {
+    "pais": "Israel",
+    "tipo": "sobremesa",
+    "prato": "Sufganiyah / halva",
+    "arquivo": null,
+    "erro": "sem candidatos",
+    "status": "fail"
+  },
+  "Líbano|principal": {
+    "pais": "Líbano",
+    "tipo": "principal",
+    "prato": "Mezze com kibbeh",
+    "arquivo": "/img/pratos/libano-principal.jpg",
+    "status": "local"
+  },
+  "Kuwait|principal": {
+    "pais": "Kuwait",
+    "tipo": "principal",
+    "prato": "Machboos kuwaitiano",
+    "arquivo": null,
+    "erro": "sem candidatos",
+    "status": "fail"
+  },
+  "Kuwait|sobremesa": {
+    "pais": "Kuwait",
+    "tipo": "sobremesa",
+    "prato": "Gereyiba",
+    "arquivo": null,
+    "erro": "sem candidatos",
+    "status": "fail"
+  },
+  "Omã|sobremesa": {
+    "pais": "Omã",
+    "tipo": "sobremesa",
+    "prato": "Halwa omani",
+    "arquivo": "/img/pratos/oma-sobremesa.jpg",
+    "status": "local"
+  },
+  "Omã|principal": {
+    "pais": "Omã",
+    "tipo": "principal",
+    "prato": "Shuwa",
+    "arquivo": null,
+    "erro": "DL 429",
+    "status": "fail"
+  },
+  "Palestina|sobremesa": {
+    "pais": "Palestina",
+    "tipo": "sobremesa",
+    "prato": "Knafeh nabulsi",
+    "arquivo": null,
+    "erro": "DL 429",
+    "status": "fail"
+  },
+  "Líbano|sobremesa": {
+    "pais": "Líbano",
+    "tipo": "sobremesa",
+    "prato": "Baklava libanesa",
+    "arquivo": null,
+    "erro": "sem candidatos",
+    "status": "fail"
+  },
+  "Palestina|principal": {
+    "pais": "Palestina",
+    "tipo": "principal",
+    "prato": "Musakhan",
+    "arquivo": null,
+    "erro": "DL 429",
+    "status": "fail"
+  },
+  "Síria|principal": {
+    "pais": "Síria",
+    "tipo": "principal",
+    "prato": "Kibbeh bil-sanieh",
+    "arquivo": null,
+    "erro": "DL 429",
+    "status": "fail"
+  },
+  "Catar|sobremesa": {
+    "pais": "Catar",
+    "tipo": "sobremesa",
+    "prato": "Lugaimat",
+    "arquivo": null,
+    "erro": "DL 429",
+    "status": "fail"
+  },
+  "Catar|principal": {
+    "pais": "Catar",
+    "tipo": "principal",
+    "prato": "Machbous catari",
+    "arquivo": null,
+    "erro": "sem candidatos",
+    "status": "fail"
+  },
+  "Síria|sobremesa": {
+    "pais": "Síria",
+    "tipo": "sobremesa",
+    "prato": "Baklava / maamoul",
+    "arquivo": null,
+    "erro": "sem candidatos",
+    "status": "fail"
+  },
+  "Turquia|principal": {
+    "pais": "Turquia",
+    "tipo": "principal",
+    "prato": "Kebab / testı kebabı",
+    "arquivo": null,
+    "erro": "sem candidatos",
+    "status": "fail"
+  },
+  "Austrália|principal": {
+    "pais": "Austrália",
+    "tipo": "principal",
+    "prato": "Meat pie australiana",
+    "arquivo": "/img/pratos/australia-principal.jpg",
+    "status": "local"
+  },
+  "Austrália|sobremesa": {
+    "pais": "Austrália",
+    "tipo": "sobremesa",
+    "prato": "Pavlova",
+    "arquivo": "/img/pratos/australia-sobremesa.jpg",
+    "status": "local"
+  },
+  "Fiji|sobremesa": {
+    "pais": "Fiji",
+    "tipo": "sobremesa",
+    "prato": "Vudi vakasoso",
+    "arquivo": "/img/pratos/fiji-sobremesa.jpg",
+    "status": "local"
+  },
+  "Fiji|principal": {
+    "pais": "Fiji",
+    "tipo": "principal",
+    "prato": "Lovo de carne de porco",
+    "arquivo": "/img/pratos/fiji-principal.jpg",
+    "status": "local"
+  },
+  "Ilhas Marshall|principal": {
+    "pais": "Ilhas Marshall",
+    "tipo": "principal",
+    "prato": "Frango grelhado com arroz",
+    "arquivo": "/img/pratos/ilhas-marshall-principal.jpg",
+    "status": "local"
+  },
+  "Ilhas Marshall|sobremesa": {
+    "pais": "Ilhas Marshall",
+    "tipo": "sobremesa",
+    "prato": "Doce de pandanus",
+    "arquivo": "/img/pratos/ilhas-marshall-sobremesa.jpg",
+    "status": "local"
+  },
+  "Turquia|sobremesa": {
+    "pais": "Turquia",
+    "tipo": "sobremesa",
+    "prato": "Baklava turca",
+    "arquivo": null,
+    "erro": "sem candidatos",
+    "status": "fail"
+  },
+  "Ilhas Salomão|principal": {
+    "pais": "Ilhas Salomão",
+    "tipo": "principal",
+    "prato": "Frango com pudim de mandioca",
+    "arquivo": "/img/pratos/ilhas-salomao-principal.jpg",
+    "status": "local"
+  },
+  "Kiribati|sobremesa": {
+    "pais": "Kiribati",
+    "tipo": "sobremesa",
+    "prato": "Toddy doce",
+    "arquivo": "/img/pratos/kiribati-sobremesa.jpg",
+    "status": "local"
+  },
+  "Ilhas Salomão|sobremesa": {
+    "pais": "Ilhas Salomão",
+    "tipo": "sobremesa",
+    "prato": "Tapioca com coco",
+    "arquivo": "/img/pratos/ilhas-salomao-sobremesa.jpg",
+    "status": "local"
+  },
+  "Kiribati|principal": {
+    "pais": "Kiribati",
+    "tipo": "principal",
+    "prato": "Porco cozido com coco",
+    "arquivo": "/img/pratos/kiribati-principal.jpg",
+    "status": "local"
+  },
+  "Micronésia|principal": {
+    "pais": "Micronésia",
+    "tipo": "principal",
+    "prato": "Tinaktak de carne",
+    "arquivo": "/img/pratos/micronesia-principal.jpg",
+    "status": "local"
+  },
+  "Nauru|principal": {
+    "pais": "Nauru",
+    "tipo": "principal",
+    "prato": "Corned beef com arroz e coco",
+    "arquivo": "/img/pratos/nauru-principal.jpg",
+    "status": "local"
+  },
+  "Micronésia|sobremesa": {
+    "pais": "Micronésia",
+    "tipo": "sobremesa",
+    "prato": "Coconut candy",
+    "arquivo": "/img/pratos/micronesia-sobremesa.jpg",
+    "status": "local"
+  },
+  "Nauru|sobremesa": {
+    "pais": "Nauru",
+    "tipo": "sobremesa",
+    "prato": "Frutas tropicais com coco",
+    "arquivo": "/img/pratos/nauru-sobremesa.jpg",
+    "status": "local"
+  },
+  "Palau|principal": {
+    "pais": "Palau",
+    "tipo": "principal",
+    "prato": "Bai com frango e taro",
+    "arquivo": "/img/pratos/palau-principal.jpg",
+    "status": "local"
+  },
+  "Palau|sobremesa": {
+    "pais": "Palau",
+    "tipo": "sobremesa",
+    "prato": "Tapioca com leite de coco",
+    "arquivo": "/img/pratos/palau-sobremesa.jpg",
+    "status": "local"
+  },
+  "Nova Zelândia|sobremesa": {
+    "pais": "Nova Zelândia",
+    "tipo": "sobremesa",
+    "prato": "Pavlova neozelandesa",
+    "arquivo": null,
+    "erro": "sem candidatos",
+    "status": "fail"
+  },
+  "Nova Zelândia|principal": {
+    "pais": "Nova Zelândia",
+    "tipo": "principal",
+    "prato": "Hangi / lamb roast",
+    "arquivo": null,
+    "erro": "sem candidatos",
+    "status": "fail"
+  },
+  "Papua-Nova Guiné|principal": {
+    "pais": "Papua-Nova Guiné",
+    "tipo": "principal",
+    "prato": "Mumu",
+    "arquivo": "/img/pratos/papua-nova-guine-principal.jpg",
+    "status": "local"
+  },
+  "Samoa|principal": {
+    "pais": "Samoa",
+    "tipo": "principal",
+    "prato": "Palusami com taro",
+    "arquivo": null,
+    "erro": "DL 429",
+    "status": "fail"
+  },
+  "Papua-Nova Guiné|sobremesa": {
+    "pais": "Papua-Nova Guiné",
+    "tipo": "sobremesa",
+    "prato": "Sago pudding",
+    "arquivo": "/img/pratos/papua-nova-guine-sobremesa.jpg",
+    "status": "local"
+  },
+  "Tonga|principal": {
+    "pais": "Tonga",
+    "tipo": "principal",
+    "prato": "Lu pulu",
+    "arquivo": null,
+    "erro": "DL 429",
+    "status": "fail"
+  },
+  "Tuvalu|principal": {
+    "pais": "Tuvalu",
+    "tipo": "principal",
+    "prato": "Pulaka com carne de porco",
+    "arquivo": "/img/pratos/tuvalu-principal.jpg",
+    "status": "local"
+  },
+  "Samoa|sobremesa": {
+    "pais": "Samoa",
+    "tipo": "sobremesa",
+    "prato": "Kopai",
+    "arquivo": null,
+    "erro": "DL 429",
+    "status": "fail"
+  },
+  "Tuvalu|sobremesa": {
+    "pais": "Tuvalu",
+    "tipo": "sobremesa",
+    "prato": "Coconut toddy sweets",
+    "arquivo": "/img/pratos/tuvalu-sobremesa.jpg",
+    "status": "local"
+  },
+  "Tonga|sobremesa": {
+    "pais": "Tonga",
+    "tipo": "sobremesa",
+    "prato": "Faikakai",
+    "arquivo": null,
+    "erro": "sem candidatos",
+    "status": "fail"
+  },
+  "Vanuatu|principal": {
+    "pais": "Vanuatu",
+    "tipo": "principal",
+    "prato": "Lap lap",
+    "arquivo": "/img/pratos/vanuatu-principal.jpg",
+    "status": "local"
+  },
+  "Vanuatu|sobremesa": {
+    "pais": "Vanuatu",
+    "tipo": "sobremesa",
+    "prato": "Tuluk",
+    "arquivo": null,
+    "erro": "DL 429",
+    "status": "fail"
+  }
+}
