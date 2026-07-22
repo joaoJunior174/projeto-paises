@@ -21,6 +21,9 @@
     '#1f4d3f',
   ];
 
+  const FATIA = 360 / CONTINENTES.length;
+  const SPIN_MS = 4200;
+
   const el = {
     form: document.getElementById('form-sorteio'),
     email: document.getElementById('email'),
@@ -43,6 +46,8 @@
     previewPratoSobremesa: document.getElementById('preview-prato-sobremesa'),
     pratoPrincipalNome: document.getElementById('prato-principal-nome'),
     pratoSobremesaNome: document.getElementById('prato-sobremesa-nome'),
+    imgPrincipal: document.getElementById('img-prato-principal'),
+    imgSobremesa: document.getElementById('img-prato-sobremesa'),
     curiosidadePrincipal: document.getElementById('curiosidade-principal'),
     curiosidadeSobremesa: document.getElementById('curiosidade-sobremesa'),
     togglePratoPrincipal: document.getElementById('toggle-prato-principal'),
@@ -76,22 +81,23 @@
   }
 
   function montarRoleta(roletaEl, innerEl) {
-    const fatia = 360 / CONTINENTES.length;
-
     const gradient = CONTINENTES.map((_, i) => {
       const cor = CORES[i % CORES.length];
-      const inicio = i * fatia;
-      const fim = (i + 1) * fatia;
+      const inicio = i * FATIA;
+      const fim = (i + 1) * FATIA;
       return `${cor} ${inicio}deg ${fim}deg`;
     }).join(', ');
 
     roletaEl.style.background = `conic-gradient(from 0deg, ${gradient})`;
+    roletaEl.style.transform = 'rotate(0deg)';
 
+    // Cada label fica no centro da fatia: 0deg do conic = topo (ponteiro).
     const labels = CONTINENTES.map((continente, i) => {
-      const rot = i * fatia + fatia / 2;
-      return `<span class="roulette-label" style="transform: rotate(${rot}deg) translateY(-50%);">${escapeHtml(
-        continente
-      )}</span>`;
+      const centroFatia = i * FATIA + FATIA / 2;
+      return `
+        <div class="roulette-label" style="transform: rotate(${centroFatia}deg)">
+          <span class="roulette-label-text">${escapeHtml(continente)}</span>
+        </div>`;
     }).join('');
 
     innerEl.innerHTML = `<div class="roulette-labels">${labels}</div>`;
@@ -99,46 +105,53 @@
 
   function indiceContinente(nome) {
     const idx = CONTINENTES.findIndex(
-      (c) => c.toLowerCase() === String(nome || '').toLowerCase()
+      (c) => c.toLowerCase() === String(nome || '').trim().toLowerCase()
     );
     return idx >= 0 ? idx : 0;
   }
 
   /**
-   * Ponteiro no topo (0deg do conic-gradient).
-   * Centro da fatia i = i * fatia + fatia/2.
-   * Rotação para alinhar esse centro ao ponteiro: 360 - centro.
+   * Ponteiro fixo no topo (0deg).
+   * Após rotacionar a roleta em R (horário), o ângulo local sob o ponteiro é (360 - R%360)%360.
+   * Queremos esse valor = centro da fatia do continente sorteado.
    */
   function anguloParaContinente(continente, anguloAtual) {
-    const fatia = 360 / CONTINENTES.length;
     const idx = indiceContinente(continente);
-    const centro = idx * fatia + fatia / 2;
-    const alvoMod = (360 - centro) % 360;
+    const centroFatia = idx * FATIA + FATIA / 2;
+    const alvoMod = (360 - centroFatia + 360) % 360;
     const atualMod = ((anguloAtual % 360) + 360) % 360;
-    let delta = alvoMod - atualMod;
-    if (delta < 0) delta += 360;
-    const voltas = 5 + Math.floor(Math.random() * 3);
+    let delta = (alvoMod - atualMod + 360) % 360;
+    // Garante várias voltas visíveis mesmo se já estiver no alvo
+    if (delta < 20) delta += 360;
+    const voltas = 5 + Math.floor(Math.random() * 2);
     return anguloAtual + voltas * 360 + delta;
   }
 
   function girarRoleta(roletaEl, anguloFinal) {
     return new Promise((resolve) => {
+      // Força o browser a aplicar o transform atual antes da nova transição
+      void roletaEl.offsetWidth;
+
       roletaEl.classList.add('spinning');
+      roletaEl.style.transition = `transform ${SPIN_MS}ms cubic-bezier(0.12, 0.75, 0.08, 1)`;
       roletaEl.style.transform = `rotate(${anguloFinal}deg)`;
 
-      const onEnd = () => {
-        roletaEl.removeEventListener('transitionend', onEnd);
+      let finalizado = false;
+      const finalizar = () => {
+        if (finalizado) return;
+        finalizado = true;
         roletaEl.classList.remove('spinning');
+        roletaEl.removeEventListener('transitionend', onEnd);
         resolve();
       };
 
-      roletaEl.addEventListener('transitionend', onEnd);
+      const onEnd = (ev) => {
+        if (ev.propertyName && ev.propertyName !== 'transform') return;
+        finalizar();
+      };
 
-      setTimeout(() => {
-        roletaEl.removeEventListener('transitionend', onEnd);
-        roletaEl.classList.remove('spinning');
-        resolve();
-      }, 4500);
+      roletaEl.addEventListener('transitionend', onEnd);
+      setTimeout(finalizar, SPIN_MS + 200);
     });
   }
 
@@ -163,6 +176,21 @@
     configurarExpandivel(el.togglePratoSobremesa, el.detalhePratoSobremesa, false);
   }
 
+  function setImagem(imgEl, url, alt) {
+    if (!imgEl) return;
+    if (url) {
+      imgEl.onerror = () => {
+        imgEl.hidden = true;
+      };
+      imgEl.src = url;
+      imgEl.alt = alt || 'Prato típico';
+      imgEl.hidden = false;
+    } else {
+      imgEl.removeAttribute('src');
+      imgEl.hidden = true;
+    }
+  }
+
   function exibirResultado(dados) {
     el.nomePrincipal.textContent = dados.prato_principal.nome;
     el.contPrincipal.textContent = dados.prato_principal.continente;
@@ -175,6 +203,13 @@
     el.pratoSobremesaNome.textContent = dados.sobremesa.prato;
     el.curiosidadePrincipal.textContent = dados.prato_principal.curiosidade;
     el.curiosidadeSobremesa.textContent = dados.sobremesa.curiosidade;
+
+    setImagem(
+      el.imgPrincipal,
+      dados.prato_principal.imagem,
+      dados.prato_principal.prato
+    );
+    setImagem(el.imgSobremesa, dados.sobremesa.imagem, dados.sobremesa.prato);
 
     resetExpandiveis();
     el.resultados.classList.remove('d-none');
@@ -249,6 +284,7 @@
         throw new Error(data.erro || 'Falha no sorteio.');
       }
 
+      // Ângulos calculados a partir do continente retornado pelo backend
       anguloPrincipal = anguloParaContinente(
         data.prato_principal.continente,
         anguloPrincipal
@@ -258,12 +294,15 @@
         anguloSobremesa
       );
 
+      el.spinningLabel.textContent = `Parando em ${data.prato_principal.continente} e ${data.sobremesa.continente}...`;
+
       await Promise.all([
         girarRoleta(el.roletaPrincipal, anguloPrincipal),
         girarRoleta(el.roletaSobremesa, anguloSobremesa),
       ]);
 
       el.spinningLabel.classList.add('d-none');
+      el.spinningLabel.textContent = 'Sorteando continentes...';
       exibirResultado(data);
 
       mostrarAlerta(
@@ -274,6 +313,7 @@
       await carregarPaises();
     } catch (err) {
       el.spinningLabel.classList.add('d-none');
+      el.spinningLabel.textContent = 'Sorteando continentes...';
       mostrarAlerta('danger', err.message || 'Erro inesperado.');
     } finally {
       sorteando = false;

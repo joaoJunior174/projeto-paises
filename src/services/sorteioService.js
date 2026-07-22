@@ -35,7 +35,9 @@ async function listarPaisesDisponiveis() {
 
 async function carregarGastronomia(executor, paisId) {
   const pratos = await executor.query(
-    'SELECT prato_principal, sobremesa FROM pratos WHERE pais_id = ?',
+    `SELECT prato_principal, sobremesa,
+            imagem_prato_principal, imagem_sobremesa
+     FROM pratos WHERE pais_id = ?`,
     [paisId]
   );
   const curiosidades = await executor.query(
@@ -58,6 +60,10 @@ function montarPayloadPais(pais, gastronomia, tipo) {
     tipo === 'principal'
       ? gastronomia.curiosidade?.prato_principal
       : gastronomia.curiosidade?.sobremesa;
+  const imagem =
+    tipo === 'principal'
+      ? gastronomia.prato?.imagem_prato_principal
+      : gastronomia.prato?.imagem_sobremesa;
 
   return {
     id: pais.id,
@@ -66,7 +72,8 @@ function montarPayloadPais(pais, gastronomia, tipo) {
     prato: pratoNome || 'Prato típico a descobrir',
     curiosidade:
       curiosidadeTexto ||
-      'Curiosidade gastronômica em breve para este país.',
+      'Dica e recomendação: curiosidade gastronômica em breve para este país.',
+    imagem: imagem || null,
   };
 }
 
